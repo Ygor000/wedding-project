@@ -18,7 +18,7 @@ function Menu() {
                     </li>
 
                     <li>
-                        <Link href="/presenca">PRESENÇA</Link>
+                        <Link href="/presenca">CONFIRME PRESENÇA</Link>
                     </li>
 
                     <li>
