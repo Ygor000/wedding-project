@@ -11,7 +11,7 @@
   font-weight: 400;
   letter-spacing: 3px;
   justify-content: center; /* Centraliza os blocos horizontalmente */
-  z-index: 9999; /* Garante que fica por cima de qualquer outro conteúdo do site */
+  z-index: 2; /* Garante que fica por cima de qualquer outro conteúdo do site */
 }
 
 .bloco {
