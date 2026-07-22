@@ -1,0 +1,33 @@
+.conteinerContador {
+  font-style: italic;
+  position: fixed; /* Fixa o elemento na tela */
+  bottom: 0;       /* Cola na borda inferior */
+  left: 0;         /* Alinha totalmente à esquerda */
+  width: 100%;     /* Ocupa toda a largura da tela */
+  padding: 15px 0; /* Espaçamento interno em cima e baixo */
+  display: flex;
+  gap: 70px;
+  color: rgb(250, 241, 225);
+  font-weight: 400;
+  letter-spacing: 3px;
+  justify-content: center; /* Centraliza os blocos horizontalmente */
+  z-index: 9999; /* Garante que fica por cima de qualquer outro conteúdo do site */
+}
+
+.bloco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.numero {
+    font-size: 4.1rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.texto {
+    font-size: 2.8rem;
+    margin: 0;
+}

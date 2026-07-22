@@ -7,7 +7,7 @@
 
 .homeTitle {
     position: absolute;
-    top: 36%;
+    top: 41%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
@@ -22,6 +22,36 @@
     font-size: 9.0rem;
     font-weight: 400;
     letter-spacing: 3px;
+    font-style: italic;
+}
+
+.linha {
+    content: "";
+    display: block;
+    width: 150px;              /* comprimento do traço */
+    height: 2px;               /* espessura */
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 6px auto 0;       /* distância do texto */
+}
+
+.dateLocal {
+    position: relative;
+    top: 30px; /* desce sem alterar a posição do h1 */
+    color: rgb(250, 241, 225);
+    letter-spacing: 5px;
+}
+
+.dateTitle{
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.localTitle {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 200;
+    padding-top: 8px;
 }
 
 .videoOverlay {
@@ -38,7 +68,7 @@
     width: 100%;
 
     z-index: 1000;
-    padding: 25px 40px;
+    padding: 27px 40px;
 }
 
 .max-width {
@@ -55,8 +85,9 @@
 
 .logo a {
     color: white;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     text-decoration: none;
+    font-style: italic;
 }
 
 .btn-menu {
@@ -68,9 +99,10 @@
 .btn-menu li a {
     color: white;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1.0rem;
     letter-spacing: 2px;
     transition: opacity 0.3s;
+    font-style: italic;
 }
 
 .btn-menu li a:hover {

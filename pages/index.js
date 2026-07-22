@@ -2,6 +2,8 @@ import Head from 'next/head';
 import Menu from '../components/Menu';
 import { useRef, useState } from 'react';
 import { MEDIA } from '../config/media';
+import Contador from '../components/contador';
+import { cormorant, lora } from '../styles/fonts';
 
 function Home(){
     const videoRef = useRef(null);
@@ -36,9 +38,18 @@ function Home(){
 
         <div className="videoOverlay"></div>
 
-        <div className="homeTitle">
+        <div className={`${cormorant.className} homeTitle`}>
             <h1>Mariana & Ygor</h1>
+
+            <div className="linha"></div>
+
+            <div className={`${lora.className} dateLocal`}>
+                <h3 className="dateTitle">22 DE MAIO DE 2027</h3>
+                <h3 className="localTitle">VITÓRIA - ES</h3>
+            </div>
         </div>
+
+        <Contador/>
 
         <button className={`soundButton ${somAtivo ? 'ativo' : ''}`} onClick={ativarSom}>
            {somAtivo ? '🔊' : '🔇'}
