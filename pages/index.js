@@ -3,7 +3,7 @@ import Menu from '../components/Menu';
 import { useRef, useState } from 'react';
 import { MEDIA } from '../config/media';
 import Contador from '../components/contador';
-import { cormorant, lora } from '../styles/fonts';
+import { cormorant, lora, montserrat } from '../styles/fonts';
 
 function Home(){
     const videoRef = useRef(null);
@@ -21,13 +21,13 @@ function Home(){
     }
 }
     return (
-    <div>
+    <div className="main-div">
         <Head>
             <meta charSet="utf-8" />
             <meta name="robots" content="index, follow" />
             <meta name="description" content="Site sobre casamento" />
             <meta name="author" content="Ygor" />
-            <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
             <title>Mariana e Ygor</title>
         </Head>
 
@@ -38,6 +38,7 @@ function Home(){
 
         <div className="videoOverlay"></div>
 
+  
         <div className={`${cormorant.className} homeTitle`}>
             <h1>Mariana & Ygor</h1>
 
@@ -45,9 +46,10 @@ function Home(){
 
             <div className={`${lora.className} dateLocal`}>
                 <h3 className="dateTitle">22 DE MAIO DE 2027</h3>
-                <h3 className="localTitle">VITÓRIA - ES</h3>
+                <h3 className={`${cormorant.className} localTitle`}>Vitória • Espírito Santo</h3>
             </div>
         </div>
+  
 
         <Contador/>
 

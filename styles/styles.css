@@ -3,11 +3,19 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    background-color: rgb(148, 111, 89);
+}
+
+.main-div {
+    min-width: 300px;
+    min-height: 100dvh;
+    position: relative;
+    overflow: hidden;
 }
 
 .homeTitle {
     position: absolute;
-    top: 41%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
@@ -15,12 +23,13 @@
     width: 100%;
     text-align: center;
     pointer-events: none; 
+    z-index: 1000;
 }
 
 .homeTitle h1{
     color: rgb(250, 241, 225);
-    font-size: 9.0rem;
-    font-weight: 400;
+    font-size: 8.1rem;
+    font-weight: 300;
     letter-spacing: 3px;
     font-style: italic;
 }
@@ -31,27 +40,27 @@
     width: 150px;              /* comprimento do traço */
     height: 2px;               /* espessura */
     background-color: rgba(255, 255, 255, 0.8);
-    margin: 6px auto 0;       /* distância do texto */
+    margin: 26px auto 0;   /* distância do texto */
 }
 
 .dateLocal {
     position: relative;
-    top: 30px; /* desce sem alterar a posição do h1 */
+    top: 50px; /* desce sem alterar a posição do h1 */
     color: rgb(250, 241, 225);
-    letter-spacing: 5px;
 }
 
 .dateTitle{
-    font-size: 22px;
-    font-style: italic;
+    font-size: 16px;
     font-weight: 300;
+    letter-spacing: 3.9px;
 }
 
 .localTitle {
-    font-size: 16px;
+    font-size: 20px;
     font-style: italic;
     font-weight: 200;
-    padding-top: 8px;
+    padding-top: 28px;
+    letter-spacing: 1px;
 }
 
 .videoOverlay {
@@ -67,8 +76,7 @@
     left: 0;
     width: 100%;
 
-    z-index: 1000;
-    padding: 27px 40px;
+    padding: 27px 30px;
 }
 
 .max-width {
@@ -76,18 +84,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 1000;
 }
 
 .logo {
     position: absolute;
+    padding-top: 12px;
     left: 0;
-}
-
-.logo a {
-    color: white;
-    font-size: 1.4rem;
-    text-decoration: none;
-    font-style: italic;
 }
 
 .btn-menu {
@@ -99,10 +102,9 @@
 .btn-menu li a {
     color: white;
     text-decoration: none;
-    font-size: 1.0rem;
+    font-size: 0.7rem;
     letter-spacing: 2px;
     transition: opacity 0.3s;
-    font-style: italic;
 }
 
 .btn-menu li a:hover {
@@ -153,4 +155,69 @@
     background: rgba(0,0,0,0.5);
     color: white;
     border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.menu-toggle {
+    position: fixed;      /* em vez de absolute */
+    top: 5px;
+    right: 10px;
+
+    display: none;
+
+    font-size: 2rem;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 2000;
+}
+
+/* Desktop */
+@media (max-width: 1200px) {}
+
+/* Notebook */
+@media (max-width: 950px) {
+    .btn-menu {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .btn-menu.active {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        inset: 0;
+        justify-content: center;
+        align-items: center;
+        gap: 35px;
+        background: rgba(0, 0, 0, .9);
+    }
+
+    .homeTitle h1 {
+        font-size: 5.9rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .homeTitle h1 {
+        font-size: 4.5rem;
+    }
+}
+
+/* Celular */
+@media (max-width: 470px) {
+    .btn-menu {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .homeTitle h1 {
+        font-size: 3.5rem;
+    }
 }

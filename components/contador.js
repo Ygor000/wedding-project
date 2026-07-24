@@ -68,19 +68,19 @@ export default function Contador(){
         <div className={styles.conteinerContador}>
             <div className={styles.bloco}>
                 <span className={styles.numero}>{tempoRestante.dias}</span>
-                <p className={styles.texto}>Dias</p>
+                <p className={styles.texto}>DIAS</p>
             </div>
             <div className={styles.bloco}>
                 <span className={styles.numero}>{tempoRestante.horas}</span>
-                <p className={styles.texto}>Horas</p>
+                <p className={styles.texto}>HORAS</p>
             </div>
             <div className={styles.bloco}>
                 <span className={styles.numero}>{tempoRestante.minutos}</span>
-                <p className={styles.texto}>Minutos</p>
+                <p className={styles.texto}>MINUTOS</p>
             </div>
             <div className={styles.bloco}>
                 <span className={styles.numero}>{tempoRestante.segundos}</span>
-                <p className={styles.texto}>Segundos</p>
+                <p className={styles.texto}>SEGUNDOS</p>
             </div>
         </div>  
     )
