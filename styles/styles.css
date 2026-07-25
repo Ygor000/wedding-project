@@ -164,7 +164,7 @@
     display: none;
 
     font-size: 2rem;
-    color: white;
+    color: rgb(250, 241, 225);
     background: none;
     border: none;
     cursor: pointer;
@@ -204,6 +204,11 @@
     .homeTitle h1 {
         font-size: 4.5rem;
     }
+
+    .soundButton {
+        bottom: 90px;
+        right: 40px;
+    }
 }
 
 /* Celular */
@@ -217,6 +222,17 @@
     }
 
     .homeTitle h1 {
+        font-size: 3.5rem;
+    }
+
+    .soundButton {
+        bottom: 90px;
+        right: 40px;
+    }
+}
+
+@media (max-height: 400px) {
+    .homeTitle h1{
         font-size: 3.5rem;
     }
 }

@@ -36,6 +36,13 @@
     }
 }
 
+@media (max-height: 400px) {
+    .conteinerContador {
+        z-index: 0;
+        visibility: hidden;
+    }
+}
+
 @media (max-width: 470px) {
     .conteinerContador {
         gap: 40px;
