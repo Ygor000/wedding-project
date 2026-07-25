@@ -198,6 +198,10 @@
     .homeTitle h1 {
         font-size: 5.9rem;
     }
+
+    .navbar {
+        padding-top: 36px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -206,8 +210,8 @@
     }
 
     .soundButton {
-        bottom: 90px;
-        right: 40px;
+        bottom: 5px;
+        right: 10px;
     }
 }
 
@@ -226,13 +230,20 @@
     }
 
     .soundButton {
-        bottom: 90px;
-        right: 40px;
+        bottom: 5px;
     }
 }
 
 @media (max-height: 400px) {
+
+}
+
+@media (max-height: 430px) {
     .homeTitle h1{
         font-size: 3.5rem;
+    }
+
+    .soundButton{
+        visibility: hidden;
     }
 }
