@@ -1,25 +1,15 @@
 import Head from 'next/head';
-import Menu from '../components/Menu';
+import Menu from '../components/Menu/index';
+import Hero from '../components/Hero/index';
+import SoundButton from "../components/SoundButton/index";
+import Contador from '../components/Contador/index';
 import { useRef, useState } from 'react';
 import { MEDIA } from '../config/media';
-import Contador from '../components/contador';
 import { cormorant, lora, montserrat } from '../styles/fonts';
 
 function Home(){
     const videoRef = useRef(null);
 
-    const [somAtivo, setSomAtivo] = useState(false)
-
-    function ativarSom() {
-    if (videoRef.current) {
-        const novoEstado = !somAtivo;
-
-        videoRef.current.muted = !novoEstado;
-        videoRef.current.play();
-
-        setSomAtivo(novoEstado);
-    }
-}
     return (
     <div className="main-div">
         <Head>
@@ -31,33 +21,33 @@ function Home(){
             <title>Mariana e Ygor</title>
         </Head>
 
-        <video className="backgroundVideo" ref={videoRef} muted autoPlay loop playsInline>
-            <source src={MEDIA.backgroundVideo}
-            type="video/mp4"/>
+        {/* Página de fundo */}
+        <div className="background">
+            <video className="backgroundVideo" ref={videoRef} muted autoPlay loop playsInline>
+                <source src={MEDIA.backgroundVideo}
+                type="video/mp4"/>
         </video>
+        </div>
 
         <div className="videoOverlay"></div>
 
-  
-        <div className={`${cormorant.className} homeTitle`}>
-            <h1>Mariana & Ygor</h1>
+        {/* Conteúdo */}
+        <main>
+            <Hero />
 
-            <div className="linha"></div>
+            <section className="presente">
 
-            <div className={`${lora.className} dateLocal`}>
-                <h3 className="dateTitle">22 DE MAIO DE 2027</h3>
-                <h3 className={`${cormorant.className} localTitle`}>Vitória • Espírito Santo</h3>
-            </div>
-        </div>
-  
+            </section>
 
-        <Contador/>
+            <section className="presenca-informacao">
 
-        <button className={`soundButton ${somAtivo ? 'ativo' : ''}`} onClick={ativarSom}>
-           {somAtivo ? '🔊' : '🔇'}
-        </button>
+            </section>
+
+        </main>
 
         <Menu className="menu-btn" />
+
+        <SoundButton  videoRef={videoRef}/>
     </div>
     );
 }

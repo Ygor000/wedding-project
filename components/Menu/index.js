@@ -1,25 +1,25 @@
 import { useState } from "react";
 import Link from "next/link";
-import { cormorant, lora, montserrat } from '../styles/fonts';
+import styles from './menu.module.css'
+import { cormorant, lora, montserrat } from '../../styles/fonts';
+import Image from "next/image";
 
 function Menu() {
     const [open, setOpen] = useState(false);
 
     return (
-        <nav className="navbar">
-            <div className="max-width">
+        <nav className={styles.navbar}>
+            <div className={styles.navContent}>
 
-                <div className="logo">
-                    <Link href="/">
-                        <img src="/logo-casamento.png" alt="Logo Mariana e Ygor" width={80} height={80} />
-                    </Link>
+                <div className={styles.logo}>
+                    <Image src="/logo-casamento.png" alt="Logo Mariana e Ygor" fill className={styles.logoImage}/>
                 </div>
 
-                <button className="menu-toggle" onClick={() => setOpen(!open)}>
+                <button className={styles.menuToggle} onClick={() => setOpen(!open)}>
                     ☰
                 </button>
 
-                <ul className={`${montserrat.className} btn-menu`}>
+                <ul className={`${styles.menu} ${open ? styles.active : ""} ${montserrat.className}`}>
                     <li> <Link href="/">INÍCIO</Link> </li>
 
                     <li> <Link href="/presenca">CONFIRME PRESENÇA</Link> </li>
@@ -30,9 +30,6 @@ function Menu() {
 
                     <li> <Link href="/album">GALERIA</Link> </li>
                 </ul>
-
-                    {/* ☰ */}
-
             </div>
         </nav>
     );

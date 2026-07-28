@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import styles from "./contador.module.css";
+import { cormorant, lora, montserrat } from '../../styles/fonts';
 
 export default function Contador(){
     const [carregado, setCarregado] = useState(false);

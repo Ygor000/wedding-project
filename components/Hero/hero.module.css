@@ -1,0 +1,79 @@
+.hero {
+    min-height: 100vh;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 110px;
+}
+
+.homeTitle {
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.homeTitle h1 {
+    color: rgb(250, 241, 225);
+    font-size: 6.5rem;
+    font-weight: 300;
+    letter-spacing: 3px;
+    font-style: italic;
+}
+
+.linha {
+    width: 124px;
+    height: 1.5px;
+    margin: 20px auto 0;
+    background-color: rgba(255,255,255,.8);
+}
+
+.dateLocal {
+    margin-top: 40px;
+    color: rgb(250,241,225);
+}
+
+.dateTitle {
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 3.9px;
+}
+
+.localTitle {
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 200;
+    padding-top: 20px;
+    letter-spacing: 1px;
+}
+
+@media (max-width:950px){
+
+    .homeTitle h1{
+        font-size:5.9rem;
+    }
+}
+
+@media(max-width:600px){
+
+    .homeTitle h1{
+        font-size:4.5rem;
+    }
+
+}
+
+@media(max-width:470px){
+
+    .homeTitle h1{
+        font-size:3.5rem;
+    }
+}
+
+@media(max-height:430px){
+
+    .homeTitle h1{
+        font-size:3.5rem;
+    }
+}

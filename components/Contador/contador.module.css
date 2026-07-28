@@ -1,16 +1,19 @@
 .conteinerContador {
-    position: fixed; /* Fixa o elemento na tela */
-    bottom: 0;       /* Cola na borda inferior */
-    left: 0;         /* Alinha totalmente à esquerda */
-    width: 100%;     /* Ocupa toda a largura da tela */
-    padding: 70px 0; /* Espaçamento interno em cima e baixo */
+    position: fixed;
+    bottom: 56px;
+    left: 0;
+    width: 100%;
     display: flex;
-    gap: 70px;
+    justify-content: center;
+    gap: 50px;
+    padding: 0;
     font-weight: 300;
     color: rgb(250, 241, 225);
     letter-spacing: 3px;
     justify-content: center; /* Centraliza os blocos horizontalmente */
     z-index: 2; /* Garante que fica por cima de qualquer outro conteúdo do site */
+    font-family: 'Times New Roman';
+    text-decoration-style: initial;
 }
 
 .bloco {
@@ -21,22 +24,20 @@
 }
 
 .numero {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     margin: 0;
 }
 
 .texto {
-    font-size: 0.7rem;
+    font-size: 0.55rem;
     margin: 0;
 }
 
 @media (max-height: 700px) {
-    .conteinerContador {
-        transform: translateY(40px);
-    }
+    
 }
 
-@media (max-height: 400px) {
+@media (max-height: 480px) {
     .conteinerContador {
         z-index: 0;
         visibility: hidden;
