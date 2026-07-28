@@ -17,7 +17,7 @@
 
 .homeTitle h1 {
     color: rgb(250, 241, 225);
-    font-size: 6.5rem;
+    font-size: 8.1rem;
     font-weight: 300;
     letter-spacing: 3px;
     font-style: italic;
@@ -36,13 +36,13 @@
 }
 
 .dateTitle {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 300;
     letter-spacing: 3.9px;
 }
 
 .localTitle {
-    font-size: 17px;
+    font-size: 16px;
     font-style: italic;
     font-weight: 200;
     padding-top: 20px;
