@@ -1,8 +1,6 @@
-"use client"; // Necessário no Next.js para rodar o JavaScript do lado do cliente
-
 import { useState, useEffect } from "react";
 import styles from "./contador.module.css";
-import { cormorant, lora, montserrat } from '../../styles/fonts';
+import { cormorant } from '../../styles/fonts';
 
 export default function Contador(){
     const [carregado, setCarregado] = useState(false);

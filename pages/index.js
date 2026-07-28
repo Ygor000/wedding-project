@@ -2,10 +2,8 @@ import Head from 'next/head';
 import Menu from '../components/Menu/index';
 import Hero from '../components/Hero/index';
 import SoundButton from "../components/SoundButton/index";
-import Contador from '../components/Contador/index';
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 import { MEDIA } from '../config/media';
-import { cormorant, lora, montserrat } from '../styles/fonts';
 
 function Home(){
     const videoRef = useRef(null);
@@ -45,7 +43,7 @@ function Home(){
 
         </main>
 
-        <Menu className="menu-btn" />
+        <Menu />
 
         <SoundButton  videoRef={videoRef}/>
     </div>
