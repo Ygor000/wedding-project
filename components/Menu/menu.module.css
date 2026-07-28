@@ -3,7 +3,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 25px;
+    padding: 26px 25px;
     z-index: 1000;
 }
 
@@ -28,7 +28,7 @@
 
 .menu{
     display: flex;
-    gap: 30px;
+    gap: 36px;
     list-style: none;
 }
 
