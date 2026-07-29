@@ -13,7 +13,15 @@ function Historia(){
 
                 <h1>O começo de tudo.</h1>
 
-                <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
+                <p>A nossa história começou com uma certeza que chegou antes mesmo das palavras. De algum modo, desde o início, nós dois já sabíamos: seria sério, seria inteiro, seria para ficar.
+
+                Com o tempo, descobrimos que amar não é encontrar alguém exatamente igual. É reconhecer no outro o mesmo riso, os mesmos sonhos e, ainda assim, aprender a acolher temperamentos tão diferentes. É construir um lugar seguro onde podemos dividir tudo: os planos, as dúvidas, os dias extraordinários e a beleza dos dias comuns.
+
+                Juntos, atravessamos fronteiras, colecionamos sabores e vimos o mundo se tornar um pouco maior. E foi diante de um pôr do sol uruguaio que um novo capítulo começou a ser escrito.
+
+                Escolhemos o dia 22 de maio para celebrar o amor que, anos antes, escolheu essa mesma data para ganhar nome.
+
+                Agora, seguimos em direção ao que sempre sonhamos: uma vida inteira de parceria, uma família para chamar de nossa e um mundo ainda por conhecer, sempre juntos.</p>
             </div>
 
         </section>
