@@ -1,11 +1,11 @@
 .conteinerContador {
     position: fixed;
-    bottom: 56px;
+    bottom: 66px;
     left: 0;
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 70px;
     padding: 0;
     font-weight: 300;
     color: rgb(250, 241, 225);
@@ -23,13 +23,13 @@
 }
 
 .numero {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     margin: 0;
     font-family: 'Times New Roman';
 }
 
 .texto {
-    font-size: 0.55rem;
+    font-size: 0.7rem;
     margin: 0;
     font-family: 'Times New Roman';
 }

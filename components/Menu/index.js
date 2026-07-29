@@ -16,19 +16,19 @@ function Menu() {
                 </div>
 
                 <button className={styles.menuToggle} onClick={() => setOpen(!open)}>
-                    ☰
+                    {open ? "✕" : "☰"}
                 </button>
 
                 <ul className={`${styles.menu} ${open ? styles.active : ""} ${montserrat.className}`}>
-                    <li> <Link href="/">INÍCIO</Link> </li>
+                    <li> <Link href="/" onClick={() => setOpen(false)}>INÍCIO</Link> </li>
 
-                    <li> <Link href="/presenca">CONFIRME PRESENÇA</Link> </li>
+                    <li> <Link href="/presenca" onClick={() => setOpen(false)}>CONFIRME PRESENÇA</Link> </li>
 
-                    <li> <Link href="/presentes">PRESENTES</Link> </li>
+                    <li> <Link href="/presentes" onClick={() => setOpen(false)}>PRESENTES</Link> </li>
 
-                    <li> <Link href="/instrucoes">ORIENTAÇÕES</Link> </li>
+                    <li> <Link href="/instrucoes" onClick={() => setOpen(false)}>ORIENTAÇÕES</Link> </li>
 
-                    <li> <Link href="/album">GALERIA</Link> </li>
+                    <li> <Link href="/album" onClick={() => setOpen(false)}>GALERIA</Link> </li>
                 </ul>
             </div>
         </nav>
