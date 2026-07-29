@@ -1,5 +1,5 @@
 .conteinerContador {
-    position: fixed;
+    position: absolute;
     bottom: 66px;
     left: 0;
     width: 100%;

@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Menu from '../components/Menu/index';
 import Hero from '../components/Hero/index';
+import Historia from '../components/HistoriaHero/index';
 import SoundButton from "../components/SoundButton/index";
 import { useRef } from 'react';
 import { MEDIA } from '../config/media';
@@ -33,14 +34,7 @@ function Home(){
         <main>
             <Hero />
 
-            <section className="presente">
-
-            </section>
-
-            <section className="presenca-informacao">
-
-            </section>
-
+            <Historia />
         </main>
 
         <Menu />
