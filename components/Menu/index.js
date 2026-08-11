@@ -12,7 +12,7 @@ function Menu() {
             <div className={styles.navContent}>
 
                 <div className={styles.logo}>
-                    <Image src="/logo-casamento.png" alt="Logo Mariana e Ygor" fill className={styles.logoImage}/>
+                    <Image src="/logo-casamento.png" alt="Logo Mariana e Ygor" width={80} height={80} className={styles.logoImage} />
                 </div>
 
                 <button className={styles.menuToggle} onClick={() => setOpen(!open)}>

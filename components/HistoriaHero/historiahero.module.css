@@ -1,10 +1,10 @@
 .section {
-    min-height: 100vh;
+    min-height: 200vh;
+    height: auto;
     width: 100%;
     position: relative;
     overflow: hidden;
 }
-
 
 .imageContainer {
     position: absolute;
@@ -18,25 +18,382 @@
 
 .content {
     position: absolute;
-    top: 52%;
-    left: 10%;
-
-    transform: translateY(-50%);
-
+    top: calc(71.5% - 194px);
+    left: 7%;
+    margin-left: 0;
+    padding-top: 0;
     z-index: 2;
-
-    color: rgb(15, 15, 15);
     text-align: left;
     max-width: 500px;
 }
 
-/* .section::after {
-    content: "";
+.subtitle {
+    color: rgb(122, 101, 84);
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    position: relative;
+    top: -67px;
+}
+
+.titleOne {
+    font-size: 90px;
+    letter-spacing: 2px;
+
+    display: flex;
+    flex-direction: column;
+    line-height: 1.0;
+    font-style: italic;
+    color: rgb(122, 101, 84);
+
+    position: relative;
+    top: -26px;
+    font-weight: 300;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+    font-size: 20px;
+    margin-top: 15px;
+    letter-spacing: 1px;
+}
+
+.imageArray {
+    display: flex;
+    gap: 30px;
+}
+
+.imageCard {
+    position: relative;
+    width: 320px;
+    height: 534px;
+
+    overflow: hidden;
+}
+
+.galleryImage {
+    object-fit: cover;
+    object-position: center top;
+}
+
+.imageSection {
     position: absolute;
-    top: 20%;
-    left: 0;
+    top: calc(71.5% + 76px);
+    right: 8%;
+    transform: translateY(-50%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.timelineContainer {
+    margin-top: 40px;
     width: 100%;
-    height: 80%;
-    background: rgb(224, 215, 205);
-    z-index: -1;
-} */
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 60px;
+
+    position: relative;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.data {
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+    font-weight: 400;
+    color: rgb(122, 101, 84);
+}
+
+.momento {
+    margin-top: 18px;
+    font-size: 26px;
+    font-style: italic;
+    font-weight: 300;
+    color: rgb(122, 101, 84);
+}
+
+.line {
+    position: absolute;
+    top: 42px;
+    left: 0px;
+    right: -5px;
+    height: 2px;
+    background: rgba(184,145,98,.35);
+    z-index: 1;
+}
+
+.circle {
+    position: relative;
+
+    width: 10px;
+    height: 10px;
+    top: 2px;
+    border-radius: 50%;
+    background: rgb(185, 154, 86);
+
+    z-index: 2;
+}
+
+.itemNamoro {
+    transform: translateX(40px);
+}
+
+.itemCasamento {
+    transform: translateX(-40px);
+}
+
+@media (max-width: 1680px) {
+
+    .content {
+        top: calc(71.5% - 160px);
+        left: 5%;
+        max-width: 450px;
+    }
+
+    .titleOne {
+        font-size: 80px;
+        top: -40px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+    }
+
+    .text {
+        font-size: 18px;
+        margin-top: -8px;
+    }
+
+    .imageArray {
+        right: 4%;
+        gap: 20px;
+    }
+
+    .imageCard {
+        width: 280px;
+        height: 467px;
+    }
+}
+
+@media (max-width: 1450px) {
+    .content {
+        top: calc(71.5% - 145px);
+        left: 5%;
+        max-width: 400px;
+    }
+
+    .titleOne {
+        font-size: 72px;
+        top: -45px;
+    }
+
+    .subtitle {
+        font-size: 15px;
+    }
+
+    .text {
+        font-size: 17px;
+        margin-top: -12px;
+    }
+
+    .imageArray {
+        right: 4%;
+        gap: 20px;
+    }
+
+    .imageCard {
+        width: 260px;
+        height: 434px;
+    }
+
+    .titleOne {
+        font-size: 75px;
+    }
+}
+
+@media (max-width: 1340px){
+        /* Bloco de texto */
+    .content {
+        top: calc(71.5% - 120px);
+        max-width: 360px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+        top: -40px;
+    }
+
+    .titleOne {
+        font-size: 64px;
+        top: -25px;
+    }
+
+    .text {
+        font-size: 16px;
+        margin-top: 0;
+    }
+
+    /* Galeria */
+    .imageSection {
+        top: calc(71.5% + 75px);
+    }
+
+    .imageArray {
+        gap: 18px;
+    }
+
+    .imageCard {
+        width: 220px;
+        height: 367px;
+    }
+
+    /* Timeline */
+    .timelineContainer {
+        margin-top: 28px;
+        column-gap: 45px;
+    }
+
+    .data {
+        font-size: 12px;
+        margin-bottom: 14px;
+    }
+
+    .momento {
+        font-size: 20px;
+        margin-top: 14px;
+    }
+
+    .circle {
+        width: 8px;
+        height: 8px;
+    }
+
+    .line {
+        top: 34px;
+    }
+}
+
+@media (max-width: 1150px) {
+
+
+    .section{
+        min-height:240vh;
+    }
+
+    .content{
+        position:absolute;
+        top:62%;
+        left:50%;
+        transform:translateX(-50%);
+        max-width:700px;
+        text-align:center;
+    }
+
+    .subtitle{
+        position:static;
+        font-size:16px;
+    }
+
+    .titleOne{
+        position:static;
+        display:block;
+        font-size:50px;
+    }
+
+    .text{
+        display:block;
+        margin-top:20px;
+    }
+
+    .imageSection{
+        position:absolute;
+        top:75%;
+        left:50%;
+        right:auto;
+        transform:translateX(-50%);
+    }
+
+    .imageArray{
+        justify-content:center;
+    }
+
+    .timelineContainer{
+        margin-top:40px;
+    }
+
+}
+
+
+@media (max-height: 740px) {
+
+    /* Bloco de texto */
+    .content {
+        top: calc(71.5% - 120px);
+        max-width: 360px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+        top: -40px;
+    }
+
+    .titleOne {
+        font-size: 64px;
+        top: -25px;
+    }
+
+    .text {
+        font-size: 16px;
+        margin-top: 0;
+    }
+
+    /* Galeria */
+    .imageSection {
+        top: calc(71.5% + 75px);
+    }
+
+    .imageArray {
+        gap: 18px;
+    }
+
+    .imageCard {
+        width: 220px;
+        height: 367px;
+    }
+
+    /* Timeline */
+    .timelineContainer {
+        margin-top: 28px;
+        column-gap: 45px;
+    }
+
+    .data {
+        font-size: 12px;
+        margin-bottom: 14px;
+    }
+
+    .momento {
+        font-size: 20px;
+        margin-top: 14px;
+    }
+
+    .circle {
+        width: 8px;
+        height: 8px;
+    }
+
+    .line {
+        top: 34px;
+    }
+}

@@ -2,6 +2,12 @@ node_modules/
 .next/
 .env.local
 .env*.local
+.env
 .vercel/
 dist/
 coverage/
+/generated/prisma
+.windsurf/
+.agents/
+.claude/
+prisma/seed.js
