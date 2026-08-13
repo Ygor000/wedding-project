@@ -39,7 +39,7 @@ function Presentes(){
             <div className={styles.bottomSection}>
 
                 <Image
-                    src="/ensaio-foto-07.jpg" alt="Foto entre os troncos pré wedding" fill className={styles.bottomImage} />
+                    src="/ensaio-foto-23.png" alt="Foto entre os troncos pré wedding" fill className={styles.bottomImage} />
 
                 <div className={styles.bottomOverlay}></div>
 

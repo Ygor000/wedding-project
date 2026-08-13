@@ -1,11 +1,11 @@
 .section {
-    min-height: 140dvh;
+    min-height: 130dvh;
     height: auto;
     width: 100%;
     position: relative;
     overflow: hidden;
     
-    --subir-conteudo: 130px;
+    --subir-conteudo: 100px;
 }
 
 .imageContainer {

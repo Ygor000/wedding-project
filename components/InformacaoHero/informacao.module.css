@@ -1,20 +1,13 @@
 .section {
     width: 100%;
-    min-height: 100dvh;
-
+    min-height: 90dvh;
     display: grid;
-    grid-template-rows: 33.333dvh 66.667dvh;
-
+    grid-template-rows: 40% 60%;
     overflow: hidden;
 }
 
-/* =========================
-   IMAGEM — 1/3 DA ALTURA
-   ========================= */
-
 .imageContainer {
     position: relative;
-
     width: 100%;
     height: 100%;
 }
@@ -24,59 +17,35 @@
     object-position: center;
 }
 
-/* =========================
-   ÁREA PRETA — 2/3 DA ALTURA
-   ========================= */
-
 .backgroundContainer {
     width: 100%;
     height: 100%;
-
     background-color: rgb(224, 215, 205);
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     padding: 60px;
 }
-
-/* =========================
-   CONTEÚDO
-   ========================= */
 
 .content {
     width: 100%;
     max-width: 900px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/* =========================
-   TÍTULO
-   ========================= */
-
 .title {
     margin: 0 0 70px;
-
     color: rgb(36, 53, 74);
-
     font-size: 18px;
     font-weight: 300;
     letter-spacing: 3px;
-
     text-align: center;
 }
 
-/* =========================
-   ÍCONES
-   ========================= */
-
 .iconRow {
     width: 100%;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -84,21 +53,19 @@
 
 .iconContainer {
     flex: 1;
-
     display: flex;
     flex-direction: column;
     align-items: center;
-
     text-align: center;
 }
 
 .generalIcon {
-    position: relative;
-
-    width: 65px;
-    height: 65px;
-
+    width: 80px;
+    height: 80px;
     margin-bottom: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .iconImage {
@@ -107,44 +74,26 @@
 
 .textIcon {
     color: rgb(36, 53, 74);
-
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 2px;
-
     white-space: nowrap;
 }
-
-
-/* =========================
-   LINHAS ENTRE OS ÍCONES
-   ========================= */
 
 .line {
     width: 80px;
     height: 1px;
-
     flex-shrink: 0;
-
     background-color: rgb(36, 53, 74);
 }
 
-
-/* =========================
-   SUBTÍTULO
-   ========================= */
-
 .subtitle {
     margin: 80px 0 0;
-
     max-width: 700px;
-
     color: rgb(36, 53, 74);
-
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 300;
     line-height: 1.5;
     letter-spacing: 1px;
-
     text-align: center;
 }

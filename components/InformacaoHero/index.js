@@ -25,7 +25,7 @@ function Informacao(){
                         <div className={styles.iconContainer}>
 
                             <div className={styles.generalIcon}>
-                                {/* <Image className={styles.iconImage} /> */}
+                                <Image src="/gps.png" width={80} height={80} className={styles.iconImage} />
                             </div>
 
                             <span className={`${montserrat.className} ${styles.textIcon}`}>
@@ -39,7 +39,7 @@ function Informacao(){
                         <div className={styles.iconContainer}>
 
                             <div className={styles.generalIcon}>
-                                {/* <Image className={styles.iconImage} /> */}
+                                <Image src="/hospedagem.png" width={100} height={100} className={styles.iconImage} />
                             </div>
 
                             <span className={`${montserrat.className} ${styles.textIcon}`}>
@@ -53,7 +53,7 @@ function Informacao(){
                         <div className={styles.iconContainer}>
 
                             <div className={styles.generalIcon}>
-                                {/* <Image className={styles.iconImage}/> */}
+                                <Image src="/traje.png" width={80} height={80} className={styles.iconImage}/>
                             </div>
 
                             <span className={`${montserrat.className} ${styles.textIcon}`}>
