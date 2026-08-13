@@ -5,6 +5,8 @@ import Historia from '../components/HistoriaHero/index';
 import SoundButton from "../components/SoundButton/index";
 import { useRef } from 'react';
 import { MEDIA } from '../config/media';
+import Informacao from '../components/InformacaoHero/index';
+import Presentes from '../components/PresentesHero/index';
 
 function Home(){
     const videoRef = useRef(null);
@@ -35,6 +37,10 @@ function Home(){
             <Hero />
 
             <Historia />
+
+            <Informacao />
+
+            <Presentes />
         </main>
 
         <Menu />

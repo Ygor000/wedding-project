@@ -1,0 +1,162 @@
+.section {
+    width: 100%;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.topSection {
+    width: 100%;
+    min-height: 50dvh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.topImage {
+    position: relative;
+    width: 100%;
+    min-height: 50dvh;
+}
+
+.image {
+    object-fit: cover;
+    object-position: center;
+}
+
+.topContent {
+    width: 100%;
+    min-height: 50dvh;
+    background-color: rgb(224, 215, 205);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+}
+
+.content {
+    width: 100%;
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.title {
+    margin: 0 0 30px;
+    color: rgb(36, 53, 74);
+    font-size: 56px;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: 2px;
+    font-style: italic;
+}
+
+.title span {
+    display: block;
+}
+
+.text {
+    max-width: 480px;
+    margin: 0 0 35px;
+    color: rgb(36, 53, 74);
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+.firstLine {
+    display: block;
+}
+
+.linkPresentes {
+    display: inline-block;
+    padding: 14px 50px;
+    color: rgb(36, 53, 74);
+    border: 1px solid rgb(36, 53, 74);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.linkPresentes:hover {
+    color: rgba(36, 53, 74, 0.5);
+
+    border-color: rgba(36, 53, 74, 0.5);
+}
+
+.bottomSection {
+    position: relative;
+    width: 100%;
+    min-height: 50dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.bottomImage {
+    object-fit: cover;
+    object-position: center 35%;
+    z-index: 0;
+}
+
+.bottomOverlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    z-index: 1;
+}
+
+.bottomContent {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 650px;
+    padding: 60px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.bottomTitle {
+    margin: 0 0 25px;
+    color: rgb(224, 215, 205);
+    font-size: 52px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 1;
+    letter-spacing: 2px;
+}
+
+.bottomText {
+    max-width: 550px;
+    margin: 0 0 35px;
+    color: rgb(224, 215, 205);
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.linkPresenca {
+    display: inline-block;
+    padding: 14px 50px;
+    color: rgb(224, 215, 205);
+    border: 1px solid rgb(224, 215, 205);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    background: transparent;
+}
+
+.linkPresenca:hover {
+    color: rgba(224, 215, 205, 0.5);
+    border-color: rgba(224, 215, 205, 0.5);
+}

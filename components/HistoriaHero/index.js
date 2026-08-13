@@ -1,5 +1,6 @@
 import styles from "../HistoriaHero/historiahero.module.css";
 import Image from "next/image";
+import Link from "next/link";
 import { useState, useEffect } from "react";
 import { cormorant, lora, montserrat } from "../../styles/fonts";
 
@@ -55,7 +56,7 @@ function Historia(){
     return (
         <section className={styles.section}>
             <div className={styles.imageContainer}>
-                <Image src="/veu-em-cima.png" alt="Efeito de véu" fill className={styles.image}/>
+                <Image src="/veu-compacto.png" alt="Efeito de véu" fill className={styles.image}/>
             </div>
             <div className={styles.layout}>
                 <div className={styles.content}>
@@ -63,7 +64,7 @@ function Historia(){
 
                     <h1 className={`${cormorant.className} ${styles.titleOne}`}><span>UMA</span> <span>HISTÓRIA</span> <span>ESCRITA</span> <span>A DOIS.</span></h1>
 
-                    <p className={`${cormorant.className} ${styles.text}`}><span>O mesmo riso, os mesmos sonhos </span>e, desde o início, a certeza<span></span>  <span>de que seria para ficar.</span></p>
+                    <p className={`${montserrat.className} ${styles.text}`}><span>O MESMO RISO, OS MESMOS SONHOS </span>E, DESDE O INÍCIO, A CERTEZA<span></span>  <span>DE QUE SERIA PARA FICAR.</span></p>
                 </div>
 
                 <div className={styles.imageSection}>
@@ -75,27 +76,32 @@ function Historia(){
                         ))}
                     </div>
                 
-
                     <div className={styles.timelineContainer}>    
                         <div className={styles.item}>
-                            <h4 className={`${montserrat.className} ${styles.data}`}>22 DE MAIO 2021</h4>
+                            <h4 className={`${montserrat.className} ${styles.data}`}>22 DE MAIO DE 2021</h4>
                             <div className={`${styles.circle} ${styles.circleNamoro}`}></div>
                             <h3 className={`${cormorant.className} ${styles.momento}`}>NAMORO</h3>
                         </div>
 
                         <div className={styles.item}>
-                            <h4 className={`${montserrat.className} ${styles.data}`}>16 DE FEVEREIRO 2026</h4>
+                            <h4 className={`${montserrat.className} ${styles.data}`}>16 DE FEVEREIRO DE 2026</h4>
                             <div className={`${styles.circle} ${styles.circleNoivado}`}></div>
                             <h3 className={`${cormorant.className} ${styles.momento}`}>NOIVADO</h3>
                         </div>
 
                         <div className={styles.item}>
-                            <h4 className={`${montserrat.className} ${styles.data}`}>22 DE MAIO 2027</h4>
+                            <h4 className={`${montserrat.className} ${styles.data}`}>22 DE MAIO DE 2027</h4>
                             <div className={`${styles.circle} ${styles.circleCasamento}`}></div>
                             <h3 className={`${cormorant.className} ${styles.momento}`}>CASAMENTO</h3>
                         </div>
 
                         <div className={styles.line}></div>
+
+                        <div className={`${montserrat.className} ${styles.divPresenca}`}>
+                            <Link href="/" className={styles.presenca}>
+                                CONFIRMAR PRESENÇA
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -1,9 +1,11 @@
 .section {
-    min-height: 200vh;
+    min-height: 140dvh;
     height: auto;
     width: 100%;
     position: relative;
     overflow: hidden;
+    
+    --subir-conteudo: 130px;
 }
 
 .imageContainer {
@@ -18,7 +20,7 @@
 
 .content {
     position: absolute;
-    top: calc(71.5% - 194px);
+    top: calc(71.5% - 194px - var(--subir-conteudo));
     left: 7%;
     margin-left: 0;
     padding-top: 0;
@@ -28,7 +30,7 @@
 }
 
 .subtitle {
-    color: rgb(122, 101, 84);
+    color: rgb(36, 53, 74);
     font-size: 18px;
     font-weight: 300;
     letter-spacing: 2px;
@@ -44,7 +46,7 @@
     flex-direction: column;
     line-height: 1.0;
     font-style: italic;
-    color: rgb(122, 101, 84);
+    color: rgb(36, 53, 74);
 
     position: relative;
     top: -26px;
@@ -54,10 +56,11 @@
 .text {
     display: flex;
     flex-direction: column;
-    line-height: 1.2;
-    font-size: 20px;
+    line-height: 1.7;
+    font-size: 14px;
     margin-top: 15px;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
+    color: rgb(36, 53, 74);
 }
 
 .imageArray {
@@ -80,7 +83,7 @@
 
 .imageSection {
     position: absolute;
-    top: calc(71.5% + 76px);
+    top: calc(71.5% + 76px - var(--subir-conteudo));
     right: 8%;
     transform: translateY(-50%);
 
@@ -108,26 +111,27 @@
 }
 
 .data {
+    position: relative;
     font-size: 14px;
     letter-spacing: 2px;
-    margin-bottom: 18px;
+    top: 12px;
+    margin-bottom: 8px;
     font-weight: 400;
-    color: rgb(122, 101, 84);
+    color: rgb(36, 53, 74);
 }
 
 .momento {
-    margin-top: 18px;
+    margin-top: 10px;
     font-size: 26px;
-    font-style: italic;
     font-weight: 300;
-    color: rgb(122, 101, 84);
+    color: rgb(36, 53, 74);
 }
 
 .line {
     position: absolute;
-    top: 42px;
-    left: 0px;
-    right: -5px;
+    top: -10px;
+    left: 30px;
+    right: 30px;
     height: 2px;
     background: rgba(184,145,98,.35);
     z-index: 1;
@@ -138,7 +142,7 @@
 
     width: 10px;
     height: 10px;
-    top: 2px;
+    bottom: 40px;
     border-radius: 50%;
     background: rgb(185, 154, 86);
 
@@ -153,7 +157,33 @@
     transform: translateX(-40px);
 }
 
-@media (max-width: 1680px) {
+.divPresenca {
+    display: flex;
+    justify-content: flex-start;
+
+    transform: translate(-27.9vw, -51px);
+}
+
+.presenca {
+    background: transparent;
+    text-decoration: none;
+    border: 1px solid rgb(36, 53, 74);
+    padding: 14px 50px;
+
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: rgb(36, 53, 74);
+
+    cursor: pointer;
+}
+
+.presenca:hover{
+    color: rgba(36, 53, 74, 0.5);
+    border: 1px solid rgba(36, 53, 74, 0.5);
+}
+
+/* @media (max-width: 1680px) {
 
     .content {
         top: calc(71.5% - 160px);
@@ -184,9 +214,9 @@
         width: 280px;
         height: 467px;
     }
-}
+} */
 
-@media (max-width: 1450px) {
+/* @media (max-width: 1450px) {
     .content {
         top: calc(71.5% - 145px);
         left: 5%;
@@ -220,10 +250,9 @@
     .titleOne {
         font-size: 75px;
     }
-}
+} */
 
-@media (max-width: 1340px){
-        /* Bloco de texto */
+/* @media (max-width: 1340px){
     .content {
         top: calc(71.5% - 120px);
         max-width: 360px;
@@ -244,7 +273,6 @@
         margin-top: 0;
     }
 
-    /* Galeria */
     .imageSection {
         top: calc(71.5% + 75px);
     }
@@ -258,7 +286,6 @@
         height: 367px;
     }
 
-    /* Timeline */
     .timelineContainer {
         margin-top: 28px;
         column-gap: 45px;
@@ -282,9 +309,9 @@
     .line {
         top: 34px;
     }
-}
+} */
 
-@media (max-width: 1150px) {
+/* @media (max-width: 1150px) {
 
 
     .section{
@@ -332,12 +359,11 @@
         margin-top:40px;
     }
 
-}
+} */
 
 
-@media (max-height: 740px) {
+/* @media (max-height: 740px) {
 
-    /* Bloco de texto */
     .content {
         top: calc(71.5% - 120px);
         max-width: 360px;
@@ -358,7 +384,6 @@
         margin-top: 0;
     }
 
-    /* Galeria */
     .imageSection {
         top: calc(71.5% + 75px);
     }
@@ -372,7 +397,6 @@
         height: 367px;
     }
 
-    /* Timeline */
     .timelineContainer {
         margin-top: 28px;
         column-gap: 45px;
@@ -396,4 +420,4 @@
     .line {
         top: 34px;
     }
-}
+} */
