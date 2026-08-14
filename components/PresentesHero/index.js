@@ -10,8 +10,7 @@ function Presentes(){
             <div className={styles.topSection}>
 
                 <div className={styles.topImage}>
-                    <Image
-                        src="/ensaio-foto-04.jpg" alt="Foto de frente pré wedding" fill className={styles.image} />
+                    <Image src="/ensaio-foto-04.jpg" alt="Foto de frente pré wedding" fill className={styles.image} />
                 </div>
 
                 <div className={styles.topContent}>
@@ -38,10 +37,7 @@ function Presentes(){
 
             <div className={styles.bottomSection}>
 
-                <Image
-                    src="/ensaio-foto-23.png" alt="Foto entre os troncos pré wedding" fill className={styles.bottomImage} />
-
-                <div className={styles.bottomOverlay}></div>
+                <Image src="/ensaio-foto-23.png" alt="Foto entre os troncos pré wedding" fill className={styles.bottomImage} />
 
                 <div className={styles.bottomContent}>
 

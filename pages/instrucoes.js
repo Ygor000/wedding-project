@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Menu from '../components/Menu';
+import Informacoes from '../components/LocalInstrucoes/index';
 
 function Home(){
     return (
@@ -12,8 +13,11 @@ function Home(){
             <meta name="viewport" content="initial-scale=1.0, width=device-width" />
             <title>Mariana e Ygor - Dicas e Instruções</title>
         </Head>
+
+        <Informacoes />
+
         <Menu />
-        Bem vindo
+
     </div>
     )
 }
