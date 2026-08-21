@@ -50,7 +50,7 @@ function Informacao(){
 
                         <div className={styles.line}></div>
 
-                        <div className={styles.iconContainer}>
+                        <Link href="/trajes" className={styles.iconContainer}>
 
                             <div className={styles.generalIcon}>
                                 <Image src="/traje.png" alt="Ícone de traje" width={80} height={80} className={styles.iconImage}/>
@@ -60,7 +60,7 @@ function Informacao(){
                                 TRAJES
                             </span>
 
-                        </div>
+                        </Link>
 
                     </div>
 

@@ -4,7 +4,7 @@
 
 .section {
     width: 100%;
-    min-height: 132dvh;
+    min-height: 128dvh;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -20,11 +20,9 @@
     position: relative;
     width: 100%;
     height: 28dvh;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     overflow: hidden;
 }
 
@@ -46,14 +44,11 @@
 .headerContent {
     position: relative;
     z-index: 2;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     text-align: center;
-
     transform: translateY(3dvh);
 }
 
@@ -89,13 +84,10 @@
 ========================================================= */
 
 .contentSection {
-
     width: 100%;
-    height: 108dvh;
-
+    height: 94dvh;
     display: flex;
     flex-direction: column;
-
     background-color: rgb(224, 215, 205);
 }
 
@@ -156,16 +148,12 @@
 
 .sheSection {
     width: 100%;
-    height: 38dvh;
-
+    height: 34dvh;
     display: flex;
     align-items: stretch;
-
     padding: 0 7%;
-
     box-sizing: border-box;
 }
-
 
 /* =========================================================
    ONE SHE
@@ -173,47 +161,36 @@
 
 .oneShe {
     width: 38%;
-
     display: flex;
     flex-direction: column;
-
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
-
     padding: 0 5% 0 3%;
-
     box-sizing: border-box;
 }
 
 .sectionTitle {
     margin: 0;
-
     color: rgb(36, 53, 74);
-
-    font-size: clamp(24px, 2vw, 30px);
+    font-size: 30px;
     font-weight: 300;
-
     line-height: 1;
     letter-spacing: 3px;
+    font-weight: 400;
 }
 
 .sectionLine {
     width: 35px;
     height: 1px;
-
     margin: 16px 0 20px;
-
     background-color: rgb(36, 53, 74);
 }
 
 .sectionText {
-    margin: 0 0 12px;
-
+    margin: 0 0 14px;
     color: rgb(36, 53, 74);
-
-    font-size: clamp(13px, 1vw, 16px);
+    font-size: 18px;
     font-weight: 300;
-
     line-height: 1.5;
 }
 
@@ -224,16 +201,10 @@
 
 .twoShe {
     width: 25%;
-
     display: flex;
     flex-direction: column;
-
-    justify-content: center;
-
+    justify-content: flex-start;
     padding: 0 4%;
-
-    border-left: 1px solid rgba(36, 53, 74, 0.15);
-
     box-sizing: border-box;
 }
 
@@ -244,19 +215,22 @@
 
 .threeShe {
     width: 25%;
-
     display: flex;
     flex-direction: column;
-
-    justify-content: center;
-
+    justify-content: flex-start;
     padding: 0 4%;
-
-    border-left: 1px solid rgba(36, 53, 74, 0.15);
-
     box-sizing: border-box;
+    position: relative;
 }
 
+.threeShe::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 1px;
+    height: 80%;
+    background-color: rgba(36, 53, 74, 0.15);
+}
 
 /* =========================================================
    TÍTULOS DAS LISTAS
@@ -264,12 +238,9 @@
 
 .listTitle {
     margin: 0;
-
     color: rgb(36, 53, 74);
-
     font-size: 10px;
     font-weight: 500;
-
     line-height: 1.2;
     letter-spacing: 2px;
 }
@@ -277,9 +248,7 @@
 .listLine {
     width: 100%;
     height: 1px;
-
     margin: 10px 0 15px;
-
     background-color: rgba(36, 53, 74, 0.3);
 }
 
@@ -325,14 +294,27 @@
 
 .heSection {
     width: 100%;
-    height: 38dvh;
+    height: 32dvh;
     display: flex;
     align-items: stretch;
     padding: 0 7%;
     box-sizing: border-box;
-    border-top: 1px solid rgba(36, 53, 74, 0.15);
+    position: relative;
 }
 
+.heSection::before {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 1px;
+    background-color: rgba(36, 53, 74, 0.15);
+}
+
+.oneHe,
+.twoHe,
+.threeHe {
+    transform: translateY(5dvh);
+}
 
 /* =========================================================
    ONE HE
@@ -340,15 +322,11 @@
 
 .oneHe {
     width: 38%;
-
     display: flex;
     flex-direction: column;
-
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
-
     padding: 0 5% 0 3%;
-
     box-sizing: border-box;
 }
 
@@ -361,9 +339,8 @@
     width: 25%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 0 4%;
-    border-left: 1px solid rgba(36, 53, 74, 0.15);
     box-sizing: border-box;
 }
 
@@ -376,10 +353,19 @@
     width: 25%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 0 4%;
-    border-left: 1px solid rgba(36, 53, 74, 0.15);
     box-sizing: border-box;
+    position: relative;
+}
+
+.threeHe::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 1px;
+    height: 80%;
+    background-color: rgba(36, 53, 74, 0.15);
 }
 
 /* =========================================================
