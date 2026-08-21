@@ -1,4 +1,5 @@
 import styles from "../LocalInstrucoes/localinformacao.module.css";
+import PageNavigation from "../pageNavigation/index";
 import Image from "next/image";
 import Link from "next/link";
 import { cormorant, lora, montserrat } from "../../styles/fonts";
@@ -30,6 +31,18 @@ function Instrucoes(){
             </div>
 
             <div className={`${styles.locationSection} ${styles.churchSection}`}>
+
+                    <PageNavigation
+                        items={[
+                            {
+                                label: "HOSPEDAGEM",
+                                href: "/hospedagem"
+                            },
+                            {
+                                label: "TRAJES",
+                                href: "/trajes"
+                            }
+                        ]} />
 
                 <div className={styles.locationInfoWrapperChurch}>
 

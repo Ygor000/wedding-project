@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Menu from '../components/Menu';
 import Informacoes from '../components/LocalInstrucoes/index';
-import Hospedagem from '../components/HospedagemInstrucoes/index';
 
 function Home(){
     return (
@@ -16,8 +15,6 @@ function Home(){
         </Head>
 
         <Informacoes />
-
-        <Hospedagem />
 
         <Menu />
 

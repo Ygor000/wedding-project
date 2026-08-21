@@ -1,4 +1,5 @@
 import styles from "../HospedagemInstrucoes/hospedagemInstrucoes.module.css";
+import PageNavigation from "../pageNavigation/index";
 import Image from "next/image";
 import Link from "next/link";
 import { cormorant, lora, montserrat } from "../../styles/fonts";
@@ -46,10 +47,6 @@ function Hospedagem() {
     return (
         <section className={styles.section}>
 
-            {/* =========================
-                CABEÇALHO
-            ========================== */}
-
             <div className={styles.headerSection}>
 
                 <Image src="/ensaio-foto-24.png" alt="Imagem de hospedagem" fill className={styles.headerImage} />
@@ -72,11 +69,6 @@ function Hospedagem() {
 
             </div>
 
-
-            {/* =========================
-                SUBCABEÇALHO
-            ========================== */}
-
             <div className={styles.subHeaderSection}>
 
                 <p className={`${cormorant.className} ${styles.subHeaderText}`}>
@@ -89,10 +81,18 @@ function Hospedagem() {
 
             </div>
 
-
-            {/* =========================
-                HOTÉIS
-            ========================== */}
+            <PageNavigation
+                items={[
+                    {
+                        label: "LOCAL E HORÁRIO",
+                        href: "/instrucoes"
+                    },
+                    {
+                        label: "TRAJES",
+                        href: "/trajes"
+                    }
+                ]}
+            />
 
             <div className={styles.hotelsSection}>
 
@@ -103,10 +103,6 @@ function Hospedagem() {
                         className={styles.optionHotel}
                     >
 
-                        {/* =====================
-                            01 — NÚMERO
-                        ====================== */}
-
                         <div className={styles.indexNumber}>
 
                             <span className={`${lora.className} ${styles.hotelNumber}`}>
@@ -116,11 +112,6 @@ function Hospedagem() {
                             <div className={styles.numberLine}></div>
 
                         </div>
-
-
-                        {/* =====================
-                            02 — HOTEL
-                        ====================== */}
 
                         <div className={styles.indexHotel}>
 
@@ -137,11 +128,6 @@ function Hospedagem() {
                             </p>
 
                         </div>
-
-
-                        {/* =====================
-                            03 — LOCALIZAÇÃO
-                        ====================== */}
 
                         <div className={styles.indexLocal}>
 
@@ -165,9 +151,6 @@ function Hospedagem() {
                                 </div>
 
                             </div>
-
-
-                            {/* PRIME HALL */}
 
                             <div className={styles.localItem}>
 
@@ -193,11 +176,6 @@ function Hospedagem() {
 
                         </div>
 
-
-                        {/* =====================
-                            04 — LINK
-                        ====================== */}
-
                         <div className={styles.hotelLink}>
 
                             <Link href={hotel.link} target="_blank" rel="noopener noreferrer" className={`${montserrat.className} ${styles.hotelLinkButton}`} >
@@ -217,11 +195,6 @@ function Hospedagem() {
 
             </div>
 
-
-            {/* =========================
-                DICA
-            ========================== */}
-
             <div className={styles.tipSection}>
 
                 {/* BLOCO 1 */}
@@ -237,9 +210,6 @@ function Hospedagem() {
 
                 </div>
 
-
-                {/* BLOCO 2 */}
-
                 <div className={styles.tipText}>
 
                     <p className={`${cormorant.className} ${styles.tipTextTop}`}>
@@ -251,9 +221,6 @@ function Hospedagem() {
                     </p>
 
                 </div>
-
-
-                {/* BLOCO 3 */}
 
                 <div className={styles.tipLocation}>
 

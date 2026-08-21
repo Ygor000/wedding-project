@@ -22,7 +22,7 @@ function Informacao(){
 
                     <div className={styles.iconRow}>
 
-                        <div className={styles.iconContainer}>
+                        <Link href="/instrucoes" className={styles.iconContainer}>
 
                             <div className={styles.generalIcon}>
                                 <Image src="/gps.png" alt="ícone de gps" width={80} height={80} className={styles.iconImage} />
@@ -32,11 +32,11 @@ function Informacao(){
                                 LOCAL E HORÁRIOS
                             </span>
 
-                        </div>
+                        </Link>
 
                         <div className={styles.line}></div>
 
-                        <div className={styles.iconContainer}>
+                        <Link href="/hospedagem" className={styles.iconContainer}>
 
                             <div className={styles.generalIcon}>
                                 <Image src="/hospedagem.png" alt="Ícone de hospedagem" width={100} height={100} className={styles.iconImage} />
@@ -46,7 +46,7 @@ function Informacao(){
                                 HOSPEDAGEM
                             </span>
 
-                        </div>
+                        </Link>
 
                         <div className={styles.line}></div>
 

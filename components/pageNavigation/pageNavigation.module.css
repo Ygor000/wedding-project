@@ -1,0 +1,40 @@
+.infoNavigation {
+    position: absolute;
+    left: 5%;
+    top: 32%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    z-index: 10;
+}
+
+.navigationItem {
+    display: flex;
+    align-items: center;
+    color: rgb(36, 53, 74);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+
+.navigationLine {
+    display: block;
+    width: 15px;
+    height: 2px;
+    margin-right: 10px;
+    background-color: rgb(36, 53, 74);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.navigationItem:hover {
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+.navigationItem:hover .navigationLine{
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}

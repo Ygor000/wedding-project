@@ -1,0 +1,563 @@
+/* =========================================================
+   SEÇÃO PRINCIPAL
+========================================================= */
+
+.section {
+    width: 100%;
+    min-height: 132dvh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: rgb(224, 215, 205);
+}
+
+
+/* =========================================================
+   CABEÇALHO
+========================================================= */
+
+.headerSection {
+    position: relative;
+    width: 100%;
+    height: 28dvh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+.headerImage {
+    object-fit: cover;
+    object-position: center 20%;
+    z-index: 0;
+}
+
+.headerOverlay {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.35);
+
+    z-index: 1;
+}
+
+.headerContent {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    transform: translateY(3dvh);
+}
+
+.headerTitle {
+    margin: 0;
+    color: rgb(224, 215, 205);
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: 2px;
+    font-style: italic;
+}
+
+.headerLine {
+    width: 60px;
+    height: 1px;
+    margin: 18px 0;
+    background-color: rgb(224, 215, 205);
+}
+
+.headerText {
+    margin: 0;
+    color: rgb(224, 215, 205);
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   ÁREA DE CONTEÚDO
+========================================================= */
+
+.contentSection {
+
+    width: 100%;
+    height: 108dvh;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: rgb(224, 215, 205);
+}
+
+
+/* =========================================================
+   SUBCABEÇALHO
+========================================================= */
+
+.subHeaderSection {
+    position: relative;
+    width: 100%;
+    height: 28dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 10%;
+    box-sizing: border-box;
+}
+
+.subHeaderTitle {
+    margin: 0;
+    color: rgb(36, 53, 74);
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 2px;
+}
+
+.subHeaderLine {
+    width: 40px;
+    height: 1px;
+    margin: 15px 0;
+    background-color: rgb(36, 53, 74);
+}
+
+.subHeaderText {
+    max-width: 650px;
+    margin: 0 0 12px;
+    color: rgb(36, 53, 74);
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+}
+
+.subHeaderIcon {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   SHE — ÁREA PARA ELAS
+========================================================= */
+
+.sheSection {
+    width: 100%;
+    height: 38dvh;
+
+    display: flex;
+    align-items: stretch;
+
+    padding: 0 7%;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   ONE SHE
+========================================================= */
+
+.oneShe {
+    width: 38%;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 0 5% 0 3%;
+
+    box-sizing: border-box;
+}
+
+.sectionTitle {
+    margin: 0;
+
+    color: rgb(36, 53, 74);
+
+    font-size: clamp(24px, 2vw, 30px);
+    font-weight: 300;
+
+    line-height: 1;
+    letter-spacing: 3px;
+}
+
+.sectionLine {
+    width: 35px;
+    height: 1px;
+
+    margin: 16px 0 20px;
+
+    background-color: rgb(36, 53, 74);
+}
+
+.sectionText {
+    margin: 0 0 12px;
+
+    color: rgb(36, 53, 74);
+
+    font-size: clamp(13px, 1vw, 16px);
+    font-weight: 300;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   TWO SHE
+========================================================= */
+
+.twoShe {
+    width: 25%;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    padding: 0 4%;
+
+    border-left: 1px solid rgba(36, 53, 74, 0.15);
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   THREE SHE
+========================================================= */
+
+.threeShe {
+    width: 25%;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    padding: 0 4%;
+
+    border-left: 1px solid rgba(36, 53, 74, 0.15);
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   TÍTULOS DAS LISTAS
+========================================================= */
+
+.listTitle {
+    margin: 0;
+
+    color: rgb(36, 53, 74);
+
+    font-size: 10px;
+    font-weight: 500;
+
+    line-height: 1.2;
+    letter-spacing: 2px;
+}
+
+.listLine {
+    width: 100%;
+    height: 1px;
+
+    margin: 10px 0 15px;
+
+    background-color: rgba(36, 53, 74, 0.3);
+}
+
+
+/* =========================================================
+   ITENS DE ROUPA
+========================================================= */
+
+.clothingItem {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-height: 28px;
+    margin-bottom: 15px;
+}
+
+.clothingItem img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.clothingItem span {
+    color: rgb(36, 53, 74);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.smallNote {
+    margin: 5px 0 0;
+    color: rgb(36, 53, 74);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+
+/* =========================================================
+   HE — ÁREA PARA ELES
+========================================================= */
+
+.heSection {
+    width: 100%;
+    height: 38dvh;
+    display: flex;
+    align-items: stretch;
+    padding: 0 7%;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(36, 53, 74, 0.15);
+}
+
+
+/* =========================================================
+   ONE HE
+========================================================= */
+
+.oneHe {
+    width: 38%;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 0 5% 0 3%;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   TWO HE
+========================================================= */
+
+.twoHe {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 4%;
+    border-left: 1px solid rgba(36, 53, 74, 0.15);
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   THREE HE
+========================================================= */
+
+.threeHe {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 4%;
+    border-left: 1px solid rgba(36, 53, 74, 0.15);
+    box-sizing: border-box;
+}
+
+/* =========================================================
+   RESPONSIVIDADE
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .infoNavigation {
+        left: 3%;
+    }
+
+    .sheSection,
+    .heSection {
+        padding: 0 5%;
+    }
+
+    .oneShe,
+    .oneHe {
+        width: 35%;
+    }
+
+    .twoShe,
+    .threeShe,
+    .twoHe,
+    .threeHe {
+        width: 27.5%;
+    }
+
+    .oneShe,
+    .oneHe {
+        padding-right: 4%;
+    }
+
+    .twoShe,
+    .threeShe,
+    .twoHe,
+    .threeHe {
+        padding: 0 3%;
+    }
+
+}
+
+
+/* =========================================================
+   TELAS MENORES
+========================================================= */
+
+@media (max-width: 800px) {
+
+    .section {
+        min-height: auto;
+    }
+
+    .headerSection {
+        height: 28dvh;
+    }
+
+    .contentSection {
+        height: auto;
+    }
+
+    .infoNavigation {
+        position: relative;
+
+        left: auto;
+        top: auto;
+
+        transform: none;
+
+        width: 100%;
+
+        flex-direction: row;
+
+        justify-content: center;
+
+        padding: 20px 0;
+
+        gap: 30px;
+
+        box-sizing: border-box;
+    }
+
+    .navigationLine {
+        display: none;
+    }
+
+    .subHeaderSection {
+        height: auto;
+
+        min-height: 25dvh;
+
+        padding: 30px 8%;
+    }
+
+    .sheSection,
+    .heSection {
+        height: auto;
+
+        flex-direction: column;
+
+        padding: 0 8%;
+    }
+
+    .oneShe,
+    .twoShe,
+    .threeShe,
+    .oneHe,
+    .twoHe,
+    .threeHe {
+        width: 100%;
+
+        padding: 30px 0;
+
+        border-left: none;
+    }
+
+    .twoShe,
+    .threeShe,
+    .twoHe,
+    .threeHe {
+        border-top: 1px solid rgba(36, 53, 74, 0.15);
+    }
+
+    .oneShe,
+    .oneHe {
+        border-top: none;
+    }
+
+    .sectionTitle {
+        font-size: 28px;
+    }
+
+}
+
+
+/* =========================================================
+   CELULARES
+========================================================= */
+
+@media (max-width: 500px) {
+
+    .headerTitle {
+        font-size: 38px;
+    }
+
+    .headerText {
+        font-size: 16px;
+    }
+
+    .subHeaderSection {
+        padding: 30px 6%;
+    }
+
+    .subHeaderTitle {
+        font-size: 25px;
+    }
+
+    .subHeaderText {
+        font-size: 14px;
+    }
+
+    .infoNavigation {
+        gap: 20px;
+    }
+
+    .navigationItem {
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+    .sheSection,
+    .heSection {
+        padding: 0 7%;
+    }
+
+    .clothingItem span {
+        font-size: 14px;
+    }
+
+}

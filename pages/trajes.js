@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Menu from '../components/Menu';
+import Trajes from '../components/TrajeInstrucoes/index';
 
 function Home(){
     return (
@@ -10,8 +11,11 @@ function Home(){
             <meta name="description" content="Site sobre o casamento de Mariana e Ygor" />
             <meta name="author" content="Ygor" />
             <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-            <title>Mariana e Ygor - Álbum de Fotos</title>
+            <title>Mariana e Ygor - Dicas e Instruções</title>
         </Head>
+
+        <Trajes />
+
         <Menu />
 
     </div>
