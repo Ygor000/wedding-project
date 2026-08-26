@@ -1,7 +1,7 @@
 .infoNavigation {
     position: absolute;
-    left: 5%;
-    top: 32%;
+    left: 4%;
+    top: 30.5%;
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -37,4 +37,30 @@
 .navigationItem:hover .navigationLine{
     opacity: 0.5;
     transition: opacity 0.3s ease;
+}
+
+@media (max-width: 435px) {
+
+    .infoNavigation {
+        position: absolute;
+        top: 20px;
+        left: 6%;
+
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+
+        z-index: 20;
+    }
+
+    .navigationItem {
+        font-size: 13px;
+        letter-spacing: 1.2px;
+    }
+
+    .navigationLine {
+        width: 12px;
+        height: 1px;
+        margin-right: 8px;
+    }
 }
