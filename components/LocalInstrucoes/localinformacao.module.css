@@ -221,6 +221,137 @@
     border: 6px solid rgb(247, 245, 243);
 }
 
+@media (max-height: 810px) {
+    /* Diminui o espaço ocupado pelo mapa */
+    .mapContainer {
+        padding: 60px 10%;
+    }
+
+    .map {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Diminui os textos */
+    .locationSubtitle {
+        font-size: 13px;
+        letter-spacing: 2.5px;
+    }
+
+    .locationTitle {
+        font-size: 30px;
+    }
+
+    .detailLabel {
+        font-size: 12px;
+        letter-spacing: 1.3px;
+    }
+
+    .locationLink {
+        font-size: 11px;
+        padding: 10px 20px;
+    }
+
+    .detailIcon {
+        width: 25px;
+        height: 25px;
+        margin-right: 12px;
+    }
+
+    .linkIcon {
+        width: 21px;
+        height: 21px;
+        margin-right: 8px;
+    }
+}
+
+@media (max-height: 670px) {
+    
+    .headerText {
+        font-size: 16px;
+    }
+
+    /* CABEÇALHO */
+
+    .headerTitle {
+        font-size: 38px;
+    }
+
+    .headerText {
+        font-size: 18px;
+    }
+
+    .headerLine {
+        margin: 14px 0;
+    }
+
+
+    /* INFORMAÇÕES */
+
+    .leafIcon {
+        width: 26px;
+        height: 26px;
+        margin-bottom: 10px;
+    }
+
+    .locationSubtitle {
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+
+    .locationTitle {
+        font-size: 40px;
+    }
+
+    .locationLine {
+        margin: 22px 0;
+    }
+
+
+    /* DETALHES */
+
+    .detail {
+        margin-bottom: 12px;
+    }
+
+    .detailIcon {
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+    }
+
+    .detailLabel {
+        font-size: 12px;
+        letter-spacing: 1.2px;
+    }
+
+
+    /* BOTÃO GOOGLE MAPS */
+
+    .locationLink {
+        margin-top: 10px;
+        padding: 9px 18px;
+        font-size: 10px;
+    }
+
+    .linkIcon {
+        width: 20px;
+        height: 20px;
+        margin-right: 7px;
+    }
+
+
+    /* MAPA */
+
+    .mapContainer {
+        padding: 55px 10%;
+    }
+
+    .map {
+        border-width: 5px;
+    }
+}
+
 @media (max-width: 1280px)  {
 
     /* Diminui o espaço ocupado pelo mapa */
@@ -435,133 +566,17 @@
     }
 }
 
-@media (max-height: 810px) {
-    /* Diminui o espaço ocupado pelo mapa */
-    .mapContainer {
-        padding: 60px 10%;
-    }
+@media (max-width: 375px) {
 
-    .map {
-        width: 100%;
-        height: 100%;
+    .headerContent {
+        transform: translateY(6dvh);
     }
-
-    /* Diminui os textos */
-    .locationSubtitle {
-        font-size: 13px;
-        letter-spacing: 2.5px;
-    }
-
-    .locationTitle {
-        font-size: 30px;
-    }
-
-    .detailLabel {
-        font-size: 12px;
-        letter-spacing: 1.3px;
-    }
-
-    .locationLink {
-        font-size: 11px;
-        padding: 10px 20px;
-    }
-
-    .detailIcon {
-        width: 25px;
-        height: 25px;
-        margin-right: 12px;
-    }
-
-    .linkIcon {
-        width: 21px;
-        height: 21px;
-        margin-right: 8px;
-    }
-}
-
-@media (max-height: 670px) {
-    
-    .headerText {
-        font-size: 16px;
-    }
-
-    /* CABEÇALHO */
 
     .headerTitle {
-        font-size: 38px;
+        font-size: 28px;
     }
 
     .headerText {
-        font-size: 18px;
-    }
-
-    .headerLine {
-        margin: 14px 0;
-    }
-
-
-    /* INFORMAÇÕES */
-
-    .leafIcon {
-        width: 26px;
-        height: 26px;
-        margin-bottom: 10px;
-    }
-
-    .locationSubtitle {
-        font-size: 13px;
-        margin-bottom: 15px;
-    }
-
-    .locationTitle {
-        font-size: 40px;
-    }
-
-    .locationLine {
-        margin: 22px 0;
-    }
-
-
-    /* DETALHES */
-
-    .detail {
-        margin-bottom: 12px;
-    }
-
-    .detailIcon {
-        width: 24px;
-        height: 24px;
-        margin-right: 10px;
-    }
-
-    .detailLabel {
-        font-size: 12px;
-        letter-spacing: 1.2px;
-    }
-
-
-    /* BOTÃO GOOGLE MAPS */
-
-    .locationLink {
-        margin-top: 10px;
-        padding: 9px 18px;
-        font-size: 10px;
-    }
-
-    .linkIcon {
-        width: 20px;
-        height: 20px;
-        margin-right: 7px;
-    }
-
-
-    /* MAPA */
-
-    .mapContainer {
-        padding: 55px 10%;
-    }
-
-    .map {
-        border-width: 5px;
+        font-size: 14px;
     }
 }
