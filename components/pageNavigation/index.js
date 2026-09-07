@@ -2,9 +2,9 @@ import Link from "next/link";
 import { montserrat } from "../../styles/fonts";
 import styles from "./pageNavigation.module.css";
 
-function PageNavigation({ items }) {
+function PageNavigation({ items, className }) {
     return (
-        <nav className={styles.infoNavigation}>
+        <nav className={`${styles.infoNavigation} ${className || ""}`}>
 
             {items.map((item) => (
 

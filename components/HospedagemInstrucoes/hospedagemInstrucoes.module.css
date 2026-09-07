@@ -1,8 +1,8 @@
 .section {
     width: 100%;
-    min-height: 126dvh;
+    min-height: 162dvh;
     display: grid;
-    grid-template-rows: 28dvh 18dvh 72dvh 8dvh;
+    grid-template-rows: 28dvh 18dvh 108dvh 8dvh;
     overflow: hidden;
     background-color: rgb(224, 215, 205);
 }
@@ -95,9 +95,9 @@
 
 .hotelsSection {
     width: 100%;
-    height: 72dvh;
+    height: 108dvh;
     display: grid;
-    grid-template-rows: repeat(4, 18dvh);
+    grid-template-rows: repeat(6, 18dvh);
 }
 
 .optionHotel {
@@ -133,11 +133,10 @@
 
 .numberLine {
     width: 1px;
-    height: 80%;
+    height: 90%;
     background-color: rgba(36, 53, 74, 0.15);
     transform: translateX(clamp(60px, 3.5vw, 30px));
 }
-
 
 .indexHotel {
     height: 100%;
@@ -188,7 +187,7 @@
     right: 0;
     top: 10%;
     width: 1px;
-    height: 60%;
+    height: 75%;
     background-color: rgba(36, 53, 74, 0.15);
 }
 
@@ -338,4 +337,266 @@
     font-weight: 500;
     line-height: 1.3;
     letter-spacing: 1.5px;
+}
+
+@media (max-height: 810px) {
+
+    .headerTitle {
+        font-size: 42px;
+    }
+
+    .headerLine {
+        width: 50px;
+        margin: 14px 0;
+    }
+
+    .headerText {
+        font-size: 18px;
+    }
+
+    .section {
+        grid-template-rows: 32dvh 22dvh 132dvh 11dvh;
+    }
+
+    .subHeaderSection {
+        height: 20dvh;
+        padding: 15px;
+        box-sizing: border-box;
+        transform: translateY(20px);
+    }
+
+    .subHeaderText {
+        max-width: 600px;
+        margin-bottom: 16px;
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .subHeaderIcon {
+        width: 26px;
+        height: 26px;
+    }
+
+    .hotelsSection {
+        height: 132dvh;
+        grid-template-rows: repeat(6, 22dvh);
+    }
+
+    .optionHotel {
+        padding-top: 8px;
+    }
+       
+    .indexNumber {
+        padding: 15px;
+    }
+
+    .hotelNumber {
+        font-size: 34px;
+    }
+
+    .indexHotel {
+        padding: 15px 25px;
+    }
+
+    .hotelTitle {
+        font-size: 24px;
+        line-height: 1.3;
+    }
+
+    .hotelSubtitle {
+        margin: 3px 0 7px;
+        font-size: 11px;
+    }
+
+    .hotelDescription {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .indexLocal {
+        padding: 15px 20px;
+    }
+
+    .localItem {
+        margin: 5px 0;
+    }
+
+    .localIcon {
+        width: 34px;
+        height: 34px;
+        margin-right: 10px;
+    }
+
+    .localTitle {
+        font-size: 11px;
+        letter-spacing: 1.3px;
+    }
+
+    .localDescription {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .hotelLink {
+        padding: 15px;
+    }
+
+    .hotelLink a {
+        gap: 7px;
+        font-size: 11px;
+        letter-spacing: 1.2px;
+    }
+
+    .hotelLinkIcon {
+        width: 14px;
+        height: 14px;
+    }
+
+    .tipSection{
+        height: 10dvh;
+    }
+
+    .tipSourceIcon {
+        width: 26px;
+        height: 26px;
+    }
+
+    .tipTitle {
+        gap: 6px;
+    }
+
+    .tipHeading {
+        font-size: 12px;
+        letter-spacing: 1.3px;
+    }
+
+    .tipText {
+        padding: 0 20px;
+    }
+
+    .tipText p {
+        font-size: 14px;
+        line-height: 1.3;
+    }
+
+    .tipLocation {
+        gap: 7px;
+        padding: 8px 15px;
+    }
+
+    .tipLocationIcon {
+        width: 26px;
+        height: 26px;
+    }
+
+    .tipLocationText {
+        font-size: 10px;
+        letter-spacing: 1.2px;
+    } 
+}
+
+@media (max-width: 1180px) {
+
+
+    .section {
+        grid-template-rows: 28dvh 22dvh 132dvh 9dvh;
+    }
+
+    .subHeaderSection {
+        padding: 15px;
+        box-sizing: border-box;
+        transform: translateY(65px);
+    }
+
+    .subHeaderText {
+        max-width: 600px;
+        margin-bottom: 16px;
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .subHeaderIcon {
+        width: 26px;
+        height: 26px;
+    }
+
+    .hotelsSection {
+        height: 132dvh;
+        grid-template-rows: repeat(6, 22dvh);
+    }
+
+    .optionHotel {
+        padding-top: 8px;
+    }
+
+    .numberLine {
+        width: 1px;
+        height: 90%;
+        background-color: rgba(36, 53, 74, 0.15);
+        transform: translateX(40px);
+    }
+
+    .hospedagemNavigation {
+        position: absolute;
+        top: 30px;
+        left: 0;
+        width: 90vw;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        z-index: 10;
+    }
+
+    .navigationItem {
+        justify-content: center;
+    }
+
+    .tipLocation {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 5px;
+    }
+
+    .tipLocationText {
+        font-size: 9px;
+        letter-spacing: 1.2px;
+    } 
+
+}
+
+@media (max-width: 900px) {
+
+    .numberLine {
+        display: none;
+    }
+
+    .localLine {
+        display: none;
+    }
+
+    .arrowIcon {
+        display: none;
+    }
+}
+
+@media (max-height: 670px) {
+
+}
+
+@media (max-width: 1280px) {
+
+}
+
+@media (max-width: 435px) {
+
+}
+
+@media (max-width: 375px) {
+
 }

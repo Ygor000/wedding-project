@@ -8,39 +8,57 @@ function Hospedagem() {
     const hoteis = [
         {
             numero: "01",
-            nome: "Quality Hotel",
-            bairro: "JARDIM DA PENHA",
-            descricao: "Conforto e praticidade a poucos minutos dos locais da celebração.",
-            igreja: "aprox. 12 min de carro",
-            primeHall: "aprox. 5 min de carro",
-            link: "https://www.booking.com/hotel/br/quality-aeroporto-vita3ria.pt-br.html?aid=354415&label=quality-aeroporto-vita3ria-cpMrRFuq_yDvBfiHRNcMWwS104323717947%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-31745961685%3Alp9197543%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YbC4OlOULAnvcrFmvh1xnqM&sid=220fbb7934943bc2cf719a4519e59cae&dest_id=-679351&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1787013272&srpvid=694a04096ceb0110&type=total&ucfs=1&"
+            nome: "Ibis Vitória Praia do Canto",
+            bairro: "PRAIA DO CANTO",
+            descricao: "Rua João da Cruz, 385, Vitória.",
+            igreja: "aprox. 16 min de carro",
+            primeHall: "aprox. 3 min de carro",
+            link: "https://www.booking.com/hotel/br/ibis-vitoria-praia-do-canto.pt-br.html?chal_t=1788307933450&force_referer=https%3A%2F%2Fwww.booking.com%2Fhotel%2Fbr%2Fibis-vitoria-praia-do-canto.pt-br.html"
         },
         {
             numero: "02",
-            nome: "Praia do Canto Apart Hotel",
+            nome: "Sleep Inn Praia do Canto",
             bairro: "PRAIA DO CANTO",
-            descricao: "Apartamentos amplos e localização privilegiada perto da área.",
-            igreja: "aprox. 8 min de carro",
+            descricao: "Av. Nossa Senhora da Penha, 1212, Vitória",
+            igreja: "aprox. 13 min de carro",
             primeHall: "aprox. 7 min de carro",
-            link: "https://www.booking.com/hotel/br/praia-do-canto-apart.pt-br.html?aid=356980&label=gog235jc-10CAsoIEIUcHJhaWEtZG8tY2FudG8tYXBhcnRILVgDaCCIAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AubRjtQGwAIB0gIkZWY2ZTk4NzAtMTNlMC00YTdiLWI5MzgtNTIyMTVjOGZjMmZm2AIB4AIB&sid=220fbb7934943bc2cf719a4519e59cae&dest_id=-679351&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1787013359&srpvid=7c170433b74600fe&type=total&ucfs=1&"
+            link: "https://www.booking.com/hotel/br/sleep-inn-praia-do-canto.pt-br.html?aid=1874345&label=canto-beach-CVaZMY94lyjpaJd_ZVKsiwS468191130147%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atiaud-2395231936498%3Akwd-335839874538%3Alp9197574%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9Ybu3g3JQEN-ys9DH3hCFZRY&sid=eeb17804a2ca83a096173243e5554d2d&all_sr_blocks=142520501_145284129_0_1_0&checkin=2027-05-22&checkout=2027-05-23&dest_id=255557&dest_type=landmark&dist=0&group_adults=2&group_children=0&hapos=3&highlighted_blocks=142520501_145284129_0_1_0&hpos=3&matching_block_id=142520501_145284129_0_1_0&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&sr_pri_blocks=142520501_145284129_0_1_0__40950&srepoch=1788307714&srpvid=dd5200f5616205af&type=total&ucfs=1&#map_closed"
         },
         {
             numero: "03",
-            nome: "Hotel Senac Ilha do Boi",
-            bairro: "ILHA DO BOI",
-            descricao: "Vista para o mar e fácil acesso à Terceira Ponte.",
-            igreja: "aprox. 10 min de carro",
-            primeHall: "aprox. 6 min de carro",
-            link: "https://www.booking.com/hotel/br/senac-ilha-do-boi.pt-br.html?aid=356980&label=gog235jc-10CAsoIEIRc2VuYWMtaWxoYS1kby1ib2lILVgDaCCIAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Ao_SjtQGwAIB0gIkMjIyYmRjMmYtNDU3My00MzUyLTg3MjYtYmE2YzYzNzE2NWFm2AIB4AIB&sid=220fbb7934943bc2cf719a4519e59cae&dest_id=-679351&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1787013398&srpvid=d7570448d51a01cb&type=total&ucfs=1&"
+            nome: "Comfort Suítes Vitória",
+            bairro: "PRAIA DO CANTO",
+            descricao: "Av. Nossa Senhora da Penha, 1327, Vitória",
+            igreja: "aprox. 14 min de carro",
+            primeHall: "aprox. 2 min de carro",
+            link: "https://www.booking.com/hotel/br/comfort-suites-vitoria.pt-br.html?aid=1874345&label=canto-beach-CVaZMY94lyjpaJd_ZVKsiwS468191130147%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atiaud-2395231936498%3Akwd-335839874538%3Alp9197574%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9Ybu3g3JQEN-ys9DH3hCFZRY&sid=eeb17804a2ca83a096173243e5554d2d&all_sr_blocks=130635703_114536425_0_1_0&checkin=2027-05-22&checkout=2027-05-23&dest_id=255557&dest_type=landmark&dist=0&group_adults=2&group_children=0&hapos=2&highlighted_blocks=130635703_114536425_0_1_0&hpos=2&matching_block_id=130635703_114536425_0_1_0&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&sr_pri_blocks=130635703_114536425_0_1_0__52650&srepoch=1788307708&srpvid=dd5200f5616205af&type=total&ucfs=1&#map_closed"
         },
         {
             numero: "04",
-            nome: "Nobile Suites Diamond",
+            nome: "Triângulo Apart Hotel",
+            bairro: "PRAIA DO CANTO",
+            descricao: "Rua Aleixo Neto, 1385, Vitória",
+            igreja: "aprox. 15 min de carro",
+            primeHall: "aprox. 3 min de carro",
+            link: "https://www.booking.com/hotel/br/apartments-vitoria.pt-br.html?aid=1874345&label=canto-beach-CVaZMY94lyjpaJd_ZVKsiwS468191130147%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atiaud-2395231936498%3Akwd-335839874538%3Alp9197574%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9Ybu3g3JQEN-ys9DH3hCFZRY&sid=eeb17804a2ca83a096173243e5554d2d&all_sr_blocks=1183810_298324463_2_2_0&checkin=2027-05-22&checkout=2027-05-23&dest_id=255557&dest_type=landmark&dist=0&group_adults=2&group_children=0&hapos=1&highlighted_blocks=1183810_298324463_2_2_0&hpos=1&matching_block_id=1183810_298324463_2_2_0&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&sr_pri_blocks=1183810_298324463_2_2_0__29700&srepoch=1788307698&srpvid=dd5200f5616205af&type=total&ucfs=1&"
+        },
+        {
+            numero: "05",
+            nome: "Golden Tulip Porto Vitória",
+            bairro: "ENSEADA DO SUÁ",
+            descricao: "Av. Nossa Senhora dos Navegantes, 635, Vitória",
+            igreja: "aprox. 10 min de carro",
+            primeHall: "aprox. 7 min de carro",
+            link: "https://www.booking.com/hotel/br/golden-tulip-porto-vitoria.pt-br.html?aid=1874345&label=canto-beach-CVaZMY94lyjpaJd_ZVKsiwS468191130147%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atiaud-2395231936498%3Akwd-335839874538%3Alp9197574%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9Ybu3g3JQEN-ys9DH3hCFZRY&sid=eeb17804a2ca83a096173243e5554d2d&all_sr_blocks=28665911_88967486_2_1_0&checkin=2027-05-22&checkout=2027-05-23&dest_id=255557&dest_type=landmark&dist=0&group_adults=2&group_children=0&hapos=12&highlighted_blocks=28665911_88967486_2_1_0&hpos=12&matching_block_id=28665911_88967486_2_1_0&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&sr_pri_blocks=28665911_88967486_2_1_0__53776&srepoch=1788307720&srpvid=dd5200f5616205af&type=total&ucfs=1&#map_closed"
+        },
+        {
+            numero: "06",
+            nome: "Ibis Vitória Praia de Camburi",
             bairro: "JARDIM DA PENHA",
-            descricao: "Estrutura completa e ótima localização para o fim de semana.",
-            igreja: "aprox. 13 min de carro",
-            primeHall: "aprox. 4 min de carro",
-            link: "https://www.booking.com/hotel/br/bristol-diamond-suites.pt-br.html?aid=356980&label=gog235jc-10CAsoIEIWYnJpc3RvbC1kaWFtb25kLXN1aXRlc0gtWANoIIgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCrdKO1AbAAgHSAiRjMWE2Mzg4Zi1lYjQ5LTQyN2ItYjM5My01NTE0ZjVhMDM1ZWXYAgHgAgE&sid=220fbb7934943bc2cf719a4519e59cae&dest_id=-679351&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1787013437&srpvid=f9350457c8740212&type=total&ucfs=1&"
+            descricao: "Av. Dante Michelini, 791, Vitória",
+            igreja: "aprox. 18 min de carro",
+            primeHall: "aprox. 1 min de carro",
+            link: "https://www.booking.com/hotel/br/ibis-praia-de-camburi.pt-br.html?aid=1874345&label=canto-beach-CVaZMY94lyjpaJd_ZVKsiwS468191130147%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atiaud-2395231936498%3Akwd-335839874538%3Alp9197574%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9Ybu3g3JQEN-ys9DH3hCFZRY&sid=eeb17804a2ca83a096173243e5554d2d&all_sr_blocks=50393402_94483941_2_2_0&checkin=2027-05-22&checkout=2027-05-23&dest_id=255557&dest_type=landmark&dist=0&group_adults=2&group_children=0&hapos=13&highlighted_blocks=50393402_94483941_2_2_0&hpos=13&matching_block_id=50393402_94483941_2_2_0&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&sr_pri_blocks=50393402_94483941_2_2_0__34110&srepoch=1788307720&srpvid=dd5200f5616205af&type=total&ucfs=1&#map_closed"
         },
     ];
 
@@ -82,6 +100,7 @@ function Hospedagem() {
             </div>
 
             <PageNavigation
+                className={styles.hospedagemNavigation}
                 items={[
                     {
                         label: "LOCAL E HORÁRIO",
