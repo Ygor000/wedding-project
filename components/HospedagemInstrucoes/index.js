@@ -100,7 +100,7 @@ function Hospedagem() {
             </div>
 
             <PageNavigation
-                className={styles.hospedagemNavigation}
+                className={styles.hospedagemNavigation} 
                 items={[
                     {
                         label: "LOCAL E HORÁRIO",
@@ -232,12 +232,12 @@ function Hospedagem() {
                 <div className={styles.tipText}>
 
                     <p className={`${cormorant.className} ${styles.tipTextTop}`}>
-                        Recomendamos hospedagem nas regiões de Jardim da Penha,
+                        Recomendamos hospedagem nas regiões de Jardim da Penha, Praia do Canto ou Enseada do Suá.
                     </p>
 
-                    <p className={`${cormorant.className} ${styles.tipTextBottom}`}>
+                    {/* <p className={`${cormorant.className} ${styles.tipTextBottom}`}>
                         Praia do Canto ou Enseada do Suá.
-                    </p>
+                    </p> */}
 
                 </div>
 

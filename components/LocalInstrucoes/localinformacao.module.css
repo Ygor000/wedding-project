@@ -72,18 +72,11 @@
     background-color: rgb(224, 215, 205);
 }
 
-/* Igreja:
-   40% informações
-   60% mapa
-*/
+
 .churchSection {
     grid-template-columns: 40% 60%;
 }
 
-/* Prime Hall:
-   60% mapa
-   40% informações
-*/
 .hallSection {
     grid-template-columns: 60% 40%;
 }
@@ -222,7 +215,7 @@
 }
 
 @media (max-height: 810px) {
-    /* Diminui o espaço ocupado pelo mapa */
+   
     .mapContainer {
         padding: 60px 10%;
     }
@@ -232,7 +225,6 @@
         height: 100%;
     }
 
-    /* Diminui os textos */
     .locationSubtitle {
         font-size: 13px;
         letter-spacing: 2.5px;
@@ -271,8 +263,6 @@
         font-size: 16px;
     }
 
-    /* CABEÇALHO */
-
     .headerTitle {
         font-size: 38px;
     }
@@ -284,9 +274,6 @@
     .headerLine {
         margin: 14px 0;
     }
-
-
-    /* INFORMAÇÕES */
 
     .leafIcon {
         width: 26px;
@@ -307,9 +294,6 @@
         margin: 22px 0;
     }
 
-
-    /* DETALHES */
-
     .detail {
         margin-bottom: 12px;
     }
@@ -325,9 +309,6 @@
         letter-spacing: 1.2px;
     }
 
-
-    /* BOTÃO GOOGLE MAPS */
-
     .locationLink {
         margin-top: 10px;
         padding: 9px 18px;
@@ -340,9 +321,6 @@
         margin-right: 7px;
     }
 
-
-    /* MAPA */
-
     .mapContainer {
         padding: 55px 10%;
     }
@@ -354,7 +332,6 @@
 
 @media (max-width: 1280px)  {
 
-    /* Diminui o espaço ocupado pelo mapa */
     .mapContainer {
         padding: 60px 10%;
     }
@@ -364,7 +341,6 @@
         height: 100%;
     }
 
-    /* Diminui os textos */
     .locationSubtitle {
         font-size: 13px;
         letter-spacing: 2.5px;
@@ -399,20 +375,11 @@
 
 @media (max-width: 435px){
 
-    /* =========================
-       SEÇÃO PRINCIPAL
-       ========================= */
-
     .section {
         display: block;
         min-height: auto;
         overflow: visible;
     }
-
-
-    /* =========================
-       CABEÇALHO
-       ========================= */
 
     .headerSection {
         height: 28dvh;
@@ -426,22 +393,12 @@
         font-size: 16px;
     }
 
-
-    /* =========================
-       SEÇÕES DE LOCALIZAÇÃO
-       ========================= */
-
     .locationSection {
         display: flex;
         flex-direction: column;
         width: 100%;
         height: auto;
     }
-
-
-    /* =========================
-       IGREJA
-       ========================= */
 
     .churchSection {
         position: relative;
@@ -462,11 +419,6 @@
         align-items: flex-start;
     }
 
-
-    /* =========================
-       PRIME HALL
-       ========================= */
-
     .hallSection {
         display: flex;
         flex-direction: column;
@@ -480,19 +432,9 @@
         box-sizing: border-box;
     }
 
-
-    /* =========================
-       FOLHA
-       ========================= */
-
     .leafIcon {
         display: none;
     }
-
-
-    /* =========================
-       TEXTOS
-       ========================= */
 
     .locationSubtitle {
         font-size: 13px;
@@ -507,11 +449,6 @@
     .locationLine {
         margin: 20px 0;
     }
-
-
-    /* =========================
-       DETALHES
-       ========================= */
 
     .detail {
         margin-bottom: 12px;
@@ -528,11 +465,6 @@
         letter-spacing: 1px;
     }
 
-
-    /* =========================
-       BOTÃO GOOGLE MAPS
-       ========================= */
-
     .locationLink {
         margin-top: 10px;
         padding: 9px 18px;
@@ -544,11 +476,6 @@
         height: 20px;
         margin-right: 7px;
     }
-
-
-    /* =========================
-       MAPAS
-       ========================= */
 
     .mapContainer {
         order: 2;

@@ -313,6 +313,7 @@
     font-size: 16px;
     font-weight: 300;
     line-height: 1.4;
+    max-width: 350px;
 }
 
 .tipLocation {
@@ -339,7 +340,7 @@
     letter-spacing: 1.5px;
 }
 
-@media (max-height: 810px) {
+@media (max-height: 1100px) {
 
     .headerTitle {
         font-size: 42px;
@@ -495,6 +496,12 @@
     } 
 }
 
+@media (max-height: 900px) {
+    .subHeaderIcon {
+        display: none;
+    }
+}
+
 @media (max-width: 1180px) {
 
 
@@ -570,7 +577,113 @@
 
 }
 
+@media (max-height: 670px) {
+
+    .section {
+        min-height: 0;
+        grid-template-rows: 32dvh 22dvh 180dvh 11dvh;
+    }
+
+    .optionHotel {
+        border-top: none;
+        height: 30dvh;
+        grid-template-columns: 5% 40% 40% 15%;
+    }
+
+    .hotelsSection {
+        height: 180dvh;
+        grid-template-rows: repeat(6, 30dvh);
+    }
+
+    .hotelNumber {
+        display: none;
+    }
+}
+
+@media (max-width: 1400px) {
+
+    .section {
+        min-height: 0;
+        grid-template-rows: 32dvh 22dvh 180dvh 11dvh;
+    }
+
+    .optionHotel {
+        border-top: none;
+        height: 30dvh;
+        grid-template-columns: 10% 35% 40% 15%;
+    }
+
+    .hotelsSection {
+        height: 180dvh;
+        grid-template-rows: repeat(6, 30dvh);
+    }
+
+    .hotelNumber{
+        display: block;
+        padding-top: 20px;
+    }
+
+}
+
 @media (max-width: 900px) {
+
+    .subHeaderText {
+        max-width: 650px;
+        margin: 0 0 12px;
+        font-size: 14px;
+    }
+
+    .hotelTitle {
+        margin: 0;
+        font-size: 25px;
+    }
+
+    .hotelSubtitle {
+        margin: 5px 0 10px;
+        font-size: 11px;
+    }
+
+    .hotelDescription {
+        max-width: 300px;
+        margin: 0;
+        font-size: 12px;
+    }
+
+    .localTitle {
+        margin: 0 0 3px;
+        font-size: 11px;
+    }
+
+    .localDescription {
+        margin: 0;
+        font-size: 13px;
+    }
+
+    .hotelLink a {
+        font-size: 10px;
+    }
+
+    .tipHeading {
+        font-size: 10px;
+    }
+
+    .tipText p {
+        margin: 0;
+        font-size: 11px;
+    }
+
+    .tipLocationIcon {
+        display: none;
+    }
+
+    .tipText {
+        padding: 0 10px;
+        border-right: none;
+    }
+
+    .tipLocationText {
+        display: none;
+    }
 
     .numberLine {
         display: none;
@@ -585,18 +698,85 @@
     }
 }
 
-@media (max-height: 670px) {
+@media (max-width: 680px) {
+    .subHeaderIcon {
+        display: none;
+    }
+
+    .indexNumber,
+    .hotelNumber {
+        display: none;
+    }
+
+    .optionHotel {
+        border-top: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .indexHotel {
+        width: 100%;
+        height: auto;
+        padding: 25px 30px 15px;
+        box-sizing: border-box;
+        align-items: center;
+    }
+
+    .indexLocal {
+        width: 100%;
+        height: auto;
+        padding: 15px 30px;
+        box-sizing: border-box;
+        align-items: center;
+    }
+
+    .localItem {
+        justify-content: center;
+    }
+
+    .hotelLink {
+        width: 100%;
+        height: auto;
+        padding: 15px 30px 25px;
+        box-sizing: border-box;
+        justify-content: center;
+    }
+
+    .hotelsSection {
+        width: 100%;
+        height: auto;
+        grid-template-rows: repeat(6, auto);
+        row-gap: 0;
+    }
+
+    .section {
+        min-height: 0;
+        grid-template-rows: 28dvh 22dvh auto 11dvh;
+        overflow-x: hidden;
+        overflow-y: visible;
+    }
+
+    .hospedagemNavigation {
+        position: absolute;
+        top: 30px;
+        left: 0;
+        width: 90vw;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        z-index: 10;
+    }
+
+    .navigationItem {
+        justify-content: center;
+    }
 
 }
 
-@media (max-width: 1280px) {
-
-}
-
-@media (max-width: 435px) {
-
-}
-
-@media (max-width: 375px) {
-
-}
