@@ -8,20 +8,6 @@ function Instrucoes(){
     return(
         <section className={styles.section}>
 
-                <PageNavigation
-                        className={styles.localNavigation}
-                        items={[
-                            {
-                                label: "HOSPEDAGEM",
-                                href: "/hospedagem"
-                            },
-                            {
-                                label: "TRAJES",
-                                href: "/trajes"
-                            }
-                        ]} 
-                />
-
             <div className={styles.headerSection}>
 
                 <Image src="/ensaio-foto-24.png" alt="Imagem de fundo" fill loading="eager" className={styles.headerImage} />
@@ -45,6 +31,20 @@ function Instrucoes(){
             </div>
 
             <div className={`${styles.locationSection} ${styles.churchSection}`}>
+
+                <PageNavigation
+                        className={styles.localNavigation}
+                        items={[
+                            {
+                                label: "HOSPEDAGEM",
+                                href: "/hospedagem"
+                            },
+                            {
+                                label: "TRAJES",
+                                href: "/trajes"
+                            }
+                        ]} 
+                />
 
                 <div className={styles.locationInfoWrapperChurch}>
 

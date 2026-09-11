@@ -500,15 +500,31 @@
 }
 
 @media (max-width: 435px) {
+    .churchSection {
+        position: relative;
+        padding-top: 0;
+    }
+
     .localNavigation {
-        position: absolute;
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        transform: none !important;
+
+        order: 0;
+
+        width: 100%;
+        height: auto;
+
         display: flex;
         flex-direction: column;
-        width: 100%;
-        transform: translate(-8%);
         align-items: center;
+
         gap: 20px;
-        z-index: 10;
+
+        padding: 30px 0 20px 0;
+
+        box-sizing: border-box;
     }
 
     .navigationItem {

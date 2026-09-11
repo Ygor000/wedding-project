@@ -89,6 +89,20 @@ function Hospedagem() {
 
             <div className={styles.subHeaderSection}>
 
+                <PageNavigation
+                    className={styles.hospedagemNavigation} 
+                    items={[
+                        {
+                            label: "LOCAL E HORÁRIO",
+                            href: "/instrucoes"
+                        },
+                        {
+                            label: "TRAJES",
+                            href: "/trajes"
+                        }
+                    ]}
+                />
+
                 <p className={`${cormorant.className} ${styles.subHeaderText}`}>
                     Selecionamos algumas opções de hospedagem com localização conveniente
                     <br />
@@ -98,20 +112,6 @@ function Hospedagem() {
                 <Image src="/folha.png" alt="Ícone de folha" width={22} height={22} className={styles.subHeaderIcon} />
 
             </div>
-
-            <PageNavigation
-                className={styles.hospedagemNavigation} 
-                items={[
-                    {
-                        label: "LOCAL E HORÁRIO",
-                        href: "/instrucoes"
-                    },
-                    {
-                        label: "TRAJES",
-                        href: "/trajes"
-                    }
-                ]}
-            />
 
             <div className={styles.hotelsSection}>
 
@@ -234,10 +234,6 @@ function Hospedagem() {
                     <p className={`${cormorant.className} ${styles.tipTextTop}`}>
                         Recomendamos hospedagem nas regiões de Jardim da Penha, Praia do Canto ou Enseada do Suá.
                     </p>
-
-                    {/* <p className={`${cormorant.className} ${styles.tipTextBottom}`}>
-                        Praia do Canto ou Enseada do Suá.
-                    </p> */}
 
                 </div>
 
