@@ -39,7 +39,7 @@
     transition: opacity 0.3s ease;
 }
 
-@media (max-width: 435px) {
+/* @media (max-width: 435px) {
 
     .infoNavigation {
         position: absolute;
@@ -58,4 +58,4 @@
     .navigationItem {
         justify-content: center;
     }
-}
+} */

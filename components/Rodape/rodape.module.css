@@ -13,16 +13,16 @@
     text-align: center;
 }
 
-@media (max-width: 435px) {
-
-    .rodape{
-        font-size: 10px;
-    }
-}
-
 @media (max-width: 680px){
 
     .rodape{
         font-size: 11px;
+    }
+}
+
+@media (max-width: 435px) {
+
+    .rodape{
+        font-size: 10px;
     }
 }

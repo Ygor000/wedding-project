@@ -373,6 +373,12 @@
     }
 }
 
+@media (max-width: 800px) {
+    .leafIcon{
+        visibility: hidden;
+    }
+}
+
 @media (max-width: 435px){
 
     .section {
@@ -490,6 +496,23 @@
         width: 100%;
         height: 100%;
         border-width: 5px;
+    }
+}
+
+@media (max-width: 435px) {
+    .localNavigation {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        transform: translate(-8%);
+        align-items: center;
+        gap: 20px;
+        z-index: 10;
+    }
+
+    .navigationItem {
+        justify-content: center;
     }
 }
 
