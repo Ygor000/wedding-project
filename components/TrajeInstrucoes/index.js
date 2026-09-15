@@ -8,10 +8,6 @@ function Trajes() {
     return (
 <section className={styles.section}>
 
-            {/* =========================
-                CABEÇALHO
-            ========================== */}
-
             <div className={styles.headerSection}>
 
                 <Image src="/ensaio-foto-24.png" alt="Imagem de fundo" fill loading="eager" className={styles.headerImage} />
@@ -34,18 +30,9 @@ function Trajes() {
 
             </div>
 
-
-            {/* =========================
-                CONTEÚDO
-            ========================== */}
-
             <div className={styles.contentSection}>
 
-                {/* =========================
-                    PAGE NAVIGATION
-                ========================== */}
-
-                <PageNavigation
+                <PageNavigation className={styles.trajesNavigation}
                         items={[
                             {
                                 label: "LOCAL E HORÁRIO",
@@ -58,33 +45,22 @@ function Trajes() {
                     ]} 
                 />
 
-
-                {/* =========================
-                    SUBCABEÇALHO
-                ========================== */}
-
                 <div className={styles.subHeaderSection}>
 
                     <h2 className={`${cormorant.className} ${styles.subHeaderTitle}`}>
-                        O TRAJE É SOCIAL.
+                        O TRAJE É SOCIAL E ELEGANTE.
                     </h2>
 
                     <div className={styles.subHeaderLine}></div>
 
                     <p className={`${cormorant.className} ${styles.subHeaderText}`}>
-                        Queremos que você se sinta elegante e confortável
-                        <br />
-                        para aproveitar cada momento.
+                        Queremos que você se sinta elegante e confortável para aproveitar cada momento.
+                        Escolha uma produção especial para celebrar com a gente
                     </p>
 
                     <Image src="/folha.png" alt="Ícone de folha" width={22} height={22} className={styles.subHeaderIcon} />
 
                 </div>
-
-
-                {/* =========================
-                    PARA ELAS
-                ========================== */}
 
                 <div className={styles.sheSection}>
 
@@ -99,21 +75,14 @@ function Trajes() {
                         <div className={styles.sectionLine}></div>
 
                         <p className={`${cormorant.className} ${styles.sectionText}`}>
-                            Vestidos longos ou midi, macacões e conjuntos sociais
-                            <br />
-                            são bem-vindos.
+                            Vestidos longos ou midi e macacões são bem-vindos.
                         </p>
 
                         <p className={`${cormorant.className} ${styles.sectionText}`}>
-                            Tecidos leves e sofisticados combinam
-                            <br />
-                            com a ocasião.
+                            Escolha tecidos, cortes e acessórios que deixem a produção especial para a ocasião.
                         </p>
 
                     </div>
-
-
-                    {/* BLOCO 2 */}
 
                     <div className={styles.twoShe}>
 
@@ -148,7 +117,7 @@ function Trajes() {
                             <Image src="/macacao-alfaiataria.png" alt="Macacão de Alfaiataria" width={22} height={22} />
 
                             <span className={`${cormorant.className}`}>
-                                Macacões de alfaiataria
+                                Macacões elegantes
                             </span>
 
                         </div>
@@ -164,9 +133,6 @@ function Trajes() {
                         </div>
 
                     </div>
-
-
-                    {/* BLOCO 3 */}
 
                     <div className={styles.threeShe}>
 
@@ -217,21 +183,14 @@ function Trajes() {
                         </div>
 
                         <p className={`${cormorant.className} ${styles.smallNote}`}>
-                            E tons muito claros.
+                            E outros tons que possam se aproximar do branco.
                         </p>
 
                     </div>
 
                 </div>
 
-
-                {/* =========================
-                    PARA ELES
-                ========================== */}
-
                 <div className={styles.heSection}>
-
-                    {/* BLOCO 1 */}
 
                     <div className={styles.oneHe}>
 
@@ -242,9 +201,16 @@ function Trajes() {
                         <div className={styles.sectionLine}></div>
 
                         <p className={`${cormorant.className} ${styles.sectionText}`}>
-                            Terno completo com camisa social
-                            <br />
-                            e gravata.
+                            Terno completo é uma ótima escolha, mnas não é obrigatório. 
+                        </p>
+
+                        <p className={`${cormorant.className} ${styles.sectionText}`}>
+                            Camisa social com calça de alfaiataria também é bem-vinda.
+                            Complete a produção com sapato social.
+                        </p>
+
+                        <p className={`${cormorant.className} ${styles.sectionText}`}>
+                            Complete a produção com sapato social.
                         </p>
 
                     </div>
@@ -265,9 +231,7 @@ function Trajes() {
                             <Image src="/terno.png" alt="Terno" width={22} height={22} />
 
                             <span className={`${cormorant.className}`}>
-                                Ternos em tons escuros
-                                <br />
-                                ou médios
+                                Terno completo
                             </span>
 
                         </div>
@@ -284,10 +248,20 @@ function Trajes() {
 
                         <div className={styles.clothingItem}>
 
+                            <Image src="/calca-de-alfaiataria.png" alt="Calça de alfaiataria" width={22} height={22} />
+
+                            <span className={`${cormorant.className}`}>
+                                Calça social ou de alfaiataria
+                            </span>
+
+                        </div>
+
+                        <div className={styles.clothingItem}>
+
                             <Image src="/gravata.png" alt="Gravata" width={22} height={22} />
 
                             <span className={`${cormorant.className}`}>
-                                Gravata
+                                Gravata (opcional)
                             </span>
 
                         </div>
@@ -320,7 +294,7 @@ function Trajes() {
                             <Image src="/camisa-polo.png" alt="Camisa polo" width={22} height={22} />
 
                             <span className={`${cormorant.className}`}>
-                                Camisa polo
+                                Camisa polo e camiseta
                             </span>
 
                         </div>

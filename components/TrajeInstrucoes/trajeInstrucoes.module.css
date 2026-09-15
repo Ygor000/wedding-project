@@ -1,7 +1,3 @@
-/* =========================================================
-   SEÇÃO PRINCIPAL
-========================================================= */
-
 .section {
     width: 100%;
     min-height: 128dvh;
@@ -10,11 +6,6 @@
     overflow: hidden;
     background-color: rgb(224, 215, 205);
 }
-
-
-/* =========================================================
-   CABEÇALHO
-========================================================= */
 
 .headerSection {
     position: relative;
@@ -35,9 +26,7 @@
 .headerOverlay {
     position: absolute;
     inset: 0;
-
     background: rgba(0, 0, 0, 0.35);
-
     z-index: 1;
 }
 
@@ -78,11 +67,6 @@
     letter-spacing: 1px;
 }
 
-
-/* =========================================================
-   ÁREA DE CONTEÚDO
-========================================================= */
-
 .contentSection {
     width: 100%;
     height: 94dvh;
@@ -90,11 +74,6 @@
     flex-direction: column;
     background-color: rgb(224, 215, 205);
 }
-
-
-/* =========================================================
-   SUBCABEÇALHO
-========================================================= */
 
 .subHeaderSection {
     position: relative;
@@ -141,11 +120,6 @@
     object-fit: contain;
 }
 
-
-/* =========================================================
-   SHE — ÁREA PARA ELAS
-========================================================= */
-
 .sheSection {
     width: 100%;
     height: 34dvh;
@@ -154,10 +128,6 @@
     padding: 0 7%;
     box-sizing: border-box;
 }
-
-/* =========================================================
-   ONE SHE
-========================================================= */
 
 .oneShe {
     width: 38%;
@@ -194,11 +164,6 @@
     line-height: 1.5;
 }
 
-
-/* =========================================================
-   TWO SHE
-========================================================= */
-
 .twoShe {
     width: 25%;
     display: flex;
@@ -208,10 +173,6 @@
     box-sizing: border-box;
 }
 
-
-/* =========================================================
-   THREE SHE
-========================================================= */
 
 .threeShe {
     width: 25%;
@@ -232,10 +193,6 @@
     background-color: rgba(36, 53, 74, 0.15);
 }
 
-/* =========================================================
-   TÍTULOS DAS LISTAS
-========================================================= */
-
 .listTitle {
     margin: 0;
     color: rgb(36, 53, 74);
@@ -251,11 +208,6 @@
     margin: 10px 0 15px;
     background-color: rgba(36, 53, 74, 0.3);
 }
-
-
-/* =========================================================
-   ITENS DE ROUPA
-========================================================= */
 
 .clothingItem {
     display: flex;
@@ -287,11 +239,6 @@
     line-height: 1.3;
 }
 
-
-/* =========================================================
-   HE — ÁREA PARA ELES
-========================================================= */
-
 .heSection {
     width: 100%;
     height: 32dvh;
@@ -316,10 +263,6 @@
     transform: translateY(5dvh);
 }
 
-/* =========================================================
-   ONE HE
-========================================================= */
-
 .oneHe {
     width: 38%;
     display: flex;
@@ -330,11 +273,6 @@
     box-sizing: border-box;
 }
 
-
-/* =========================================================
-   TWO HE
-========================================================= */
-
 .twoHe {
     width: 25%;
     display: flex;
@@ -343,11 +281,6 @@
     padding: 0 4%;
     box-sizing: border-box;
 }
-
-
-/* =========================================================
-   THREE HE
-========================================================= */
 
 .threeHe {
     width: 25%;
@@ -367,10 +300,6 @@
     height: 80%;
     background-color: rgba(36, 53, 74, 0.15);
 }
-
-/* =========================================================
-   RESPONSIVIDADE
-========================================================= */
 
 @media (max-width: 1100px) {
 
@@ -410,41 +339,45 @@
 }
 
 
-/* =========================================================
-   TELAS MENORES
-========================================================= */
-
 @media (max-width: 800px) {
 
-    .section {
+     .section {
         min-height: auto;
+        height: auto;
+        overflow: visible;
     }
 
     .headerSection {
         height: 28dvh;
+        flex-shrink: 0;
     }
 
     .contentSection {
+        width: 100%;
         height: auto;
+        min-height: 0;
+        overflow: visible;
+    }
+
+    .subHeaderIcon{
+        display: none;
     }
 
     .infoNavigation {
         position: relative;
-
         left: auto;
         top: auto;
-
         transform: none;
 
         width: 100%;
 
-        flex-direction: row;
-
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         justify-content: center;
 
-        padding: 20px 0;
-
-        gap: 30px;
+        gap: 15px;
+        padding: 25px 0 15px;
 
         box-sizing: border-box;
     }
@@ -454,20 +387,25 @@
     }
 
     .subHeaderSection {
+        width: 100%;
         height: auto;
+        min-height: auto;
 
-        min-height: 25dvh;
+        padding: 25px 8% 40px;
 
-        padding: 30px 8%;
+        box-sizing: border-box;
     }
 
     .sheSection,
     .heSection {
+        width: 100%;
         height: auto;
 
         flex-direction: column;
 
         padding: 0 8%;
+
+        box-sizing: border-box;
     }
 
     .oneShe,
@@ -477,44 +415,44 @@
     .twoHe,
     .threeHe {
         width: 100%;
+        height: auto;
 
         padding: 30px 0;
 
         border-left: none;
+        transform: none;
     }
 
-    .twoShe,
-    .threeShe,
-    .twoHe,
-    .threeHe {
-        border-top: 1px solid rgba(36, 53, 74, 0.15);
-    }
-
-    .oneShe,
-    .oneHe {
-        border-top: none;
+    .threeShe::before,
+    .threeHe::before {
+        display: none;
     }
 
     .sectionTitle {
         font-size: 28px;
     }
 
+    .trajesNavigation{
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        transform: none !important;
+
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 20px;
+        padding: 30px 0 25px;
+
+        box-sizing: border-box;
+        z-index: 10;
+    }
 }
 
-
-/* =========================================================
-   CELULARES
-========================================================= */
-
 @media (max-width: 500px) {
-
-    .headerTitle {
-        font-size: 38px;
-    }
-
-    .headerText {
-        font-size: 16px;
-    }
 
     .subHeaderSection {
         padding: 30px 6%;
@@ -546,4 +484,164 @@
         font-size: 14px;
     }
 
+    .trajesNavigation{
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        transform: none !important;
+
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 20px;
+        padding: 30px 0 25px;
+
+        box-sizing: border-box;
+        z-index: 10;
+    }
+}
+
+@media (max-height: 765px) and (min-width: 801px) {
+
+    .section {
+        min-height: 142dvh;
+    }
+
+    .contentSection {
+        height: auto;
+    }
+
+     .headerTitle {
+        font-size: 42px;
+    }
+
+    .headerLine {
+        width: 50px;
+        margin: 12px 0;
+    }
+
+    .headerText {
+        font-size: 18px;
+        line-height: 1.3;
+    }
+
+    .subHeaderSection {
+        height: auto;
+        min-height: 28dvh;
+
+        flex-shrink: 0;
+
+        padding: 50px 10% 35px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        box-sizing: border-box;
+    }
+
+    .subHeaderTitle {
+        font-size: 24px;
+        line-height: 1.15;
+    }
+
+    .subHeaderLine {
+        width: 35px;
+        margin: 10px 0;
+    }
+
+    .subHeaderText {
+        max-width: 650px;
+        margin: 0 0 8px;
+        font-size: 15px;
+        line-height: 1.35;
+    }
+
+    .subHeaderIcon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .sheSection {
+        height: 36dvh;
+        flex-shrink: 0;
+    }
+
+    .heSection {
+        height: 42dvh;
+        flex-shrink: 0;
+    }
+
+    .sectionTitle {
+        font-size: 26px;
+    }
+
+    .sectionLine {
+        margin: 12px 0 15px;
+    }
+
+    .sectionText {
+        font-size: 15px;
+        line-height: 1.4;
+        margin-bottom: 10px;
+    }
+
+    .listTitle {
+        font-size: 9px;
+    }
+
+    .listLine {
+        margin: 8px 0 10px;
+    }
+
+    .clothingItem {
+        gap: 10px;
+        min-height: 24px;
+        margin-bottom: 9px;
+    }
+
+    .clothingItem img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .clothingItem span {
+        font-size: 14px;
+        line-height: 1.2;
+    }
+
+    .smallNote {
+        margin: 8px 0 18px;
+        font-size: 14px;
+        line-height: 1.25;
+    }
+
+    .oneHe,
+    .twoHe,
+    .threeHe {
+        transform: translateY(3dvh);
+    }
+
+    .trajesNavigation{
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        transform: none !important;
+
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 20px;
+        padding: 30px 0 25px;
+
+        box-sizing: border-box;
+        z-index: 10;
+    }
 }
