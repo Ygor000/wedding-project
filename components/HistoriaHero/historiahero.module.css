@@ -183,241 +183,449 @@
     border: 1px solid rgba(36, 53, 74, 0.5);
 }
 
-/* @media (max-width: 1680px) {
+@media (max-width: 1100px) {
+
+    .section {
+        min-height: 130dvh;
+        --subir-conteudo: 70px;
+    }
 
     .content {
-        top: calc(71.5% - 160px);
         left: 5%;
-        max-width: 450px;
-    }
-
-    .titleOne {
-        font-size: 80px;
-        top: -40px;
-    }
-
-    .subtitle {
-        font-size: 16px;
-    }
-
-    .text {
-        font-size: 18px;
-        margin-top: -8px;
-    }
-
-    .imageArray {
-        right: 4%;
-        gap: 20px;
-    }
-
-    .imageCard {
-        width: 280px;
-        height: 467px;
-    }
-} */
-
-/* @media (max-width: 1450px) {
-    .content {
-        top: calc(71.5% - 145px);
-        left: 5%;
-        max-width: 400px;
-    }
-
-    .titleOne {
-        font-size: 72px;
-        top: -45px;
+        max-width: 380px;
     }
 
     .subtitle {
         font-size: 15px;
+        top: -50px;
+    }
+
+    .titleOne {
+        font-size: 68px;
+        line-height: 1;
+        top: -20px;
     }
 
     .text {
-        font-size: 17px;
-        margin-top: -12px;
+        font-size: 12px;
+        line-height: 1.6;
+        letter-spacing: 1px;
+    }
+
+    .imageSection {
+        right: 5%;
     }
 
     .imageArray {
-        right: 4%;
+        gap: 18px;
+    }
+
+    .imageCard {
+        width: 220px;
+        height: 370px;
+    }
+
+    .timelineContainer {
+        margin-top: 30px;
+        column-gap: 25px;
+    }
+
+    .data {
+        font-size: 10px;
+        letter-spacing: 1.2px;
+    }
+
+    .momento {
+        font-size: 21px;
+    }
+
+    .divPresenca {
+        transform: translate(-31vw, -45px);
+    }
+
+    .presenca {
+        padding: 12px 30px;
+        font-size: 12px;
+    }
+}
+
+
+/* =========================================================
+   ATÉ 800PX
+   AQUI O LAYOUT DEIXA DE SER ABSOLUTO
+========================================================= */
+
+@media (max-width: 800px) {
+
+    .section {
+        width: 100%;
+        min-height: auto;
+        height: auto;
+        overflow: hidden;
+        padding: 80px 0;
+        box-sizing: border-box;
+    }
+
+    .imageContainer {
+        position: absolute;
+        inset: 0;
+    }
+
+    .image {
+        object-fit: cover;
+        object-position: center center;
+    }
+
+    .layout {
+        position: relative;
+        z-index: 2;
+
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        padding: 0 7%;
+        box-sizing: border-box;
+    }
+
+
+    /* TEXTO */
+
+    .content {
+        position: relative;
+        top: auto;
+        left: auto;
+
+        width: 100%;
+        max-width: none;
+
+        margin: 0 0 60px;
+        padding: 0;
+
+        text-align: left;
+    }
+
+    .subtitle {
+        position: relative;
+        top: auto;
+
+        margin: 0 0 25px;
+
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+
+    .titleOne {
+        position: relative;
+        top: auto;
+
+        margin: 0 0 30px;
+
+        font-size: 62px;
+        line-height: 0.95;
+    }
+
+    .text {
+        margin: 0;
+
+        font-size: 12px;
+        line-height: 1.7;
+        letter-spacing: 1px;
+    }
+
+
+    /* GALERIA */
+
+    .imageSection {
+        position: relative;
+
+        top: auto;
+        right: auto;
+
+        width: 100%;
+
+        transform: none;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imageArray {
+        width: 100%;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 12px;
+    }
+
+    .imageCard {
+        width: 100%;
+        height: 42vw;
+        max-height: 340px;
+    }
+
+
+    /* TIMELINE */
+
+    .timelineContainer {
+        width: 100%;
+
+        margin-top: 45px;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        column-gap: 10px;
+    }
+
+    .data {
+        top: 10px;
+
+        font-size: 9px;
+        letter-spacing: 0.8px;
+
+        white-space: normal;
+    }
+
+    .momento {
+        margin-top: 8px;
+        font-size: 19px;
+    }
+
+    .circle {
+        width: 8px;
+        height: 8px;
+        bottom: 35px;
+    }
+
+    .line {
+        left: 8%;
+        right: 8%;
+    }
+
+
+    /* BOTÃO */
+
+    .divPresenca {
+        grid-column: 1 / -1;
+
+        width: 100%;
+
+        margin-top: 35px;
+
+        display: flex;
+        justify-content: center;
+
+        transform: none;
+    }
+
+    .presenca {
+        padding: 12px 30px;
+
+        font-size: 11px;
+        letter-spacing: 1.5px;
+    }
+}
+
+
+/* =========================================================
+   ATÉ 500PX
+========================================================= */
+
+@media (max-width: 500px) {
+
+    .section {
+        padding: 60px 0;
+    }
+
+    .layout {
+        padding: 0 6%;
+    }
+
+
+    /* TEXTO */
+
+    .content {
+        margin-bottom: 45px;
+    }
+
+    .subtitle {
+        margin-bottom: 20px;
+
+        font-size: 11px;
+        letter-spacing: 1.5px;
+    }
+
+    .titleOne {
+        margin-bottom: 25px;
+
+        font-size: 48px;
+        letter-spacing: 1px;
+        line-height: 0.95;
+    }
+
+    .text {
+        font-size: 10px;
+        line-height: 1.7;
+        letter-spacing: 0.7px;
+    }
+
+
+    /* FOTOS */
+
+    .imageArray {
+        gap: 7px;
+    }
+
+    .imageCard {
+        height: 48vw;
+    }
+
+
+    /* TIMELINE */
+
+    .timelineContainer {
+        margin-top: 40px;
+        column-gap: 4px;
+    }
+
+    .data {
+        top: 8px;
+
+        font-size: 7px;
+        letter-spacing: 0.4px;
+        line-height: 1.3;
+    }
+
+    .momento {
+        font-size: 15px;
+    }
+
+    .circle {
+        width: 7px;
+        height: 7px;
+        bottom: 31px;
+    }
+
+    .line {
+        top: -8px;
+        left: 10%;
+        right: 10%;
+        height: 1px;
+    }
+
+
+    /* BOTÃO */
+
+    .divPresenca {
+        margin-top: 30px;
+    }
+
+    .presenca {
+        width: 100%;
+        max-width: 280px;
+
+        padding: 12px 15px;
+
+        box-sizing: border-box;
+
+        text-align: center;
+
+        font-size: 10px;
+        letter-spacing: 1.2px;
+    }
+}
+
+
+/* =========================================================
+   NOTEBOOKS COM POUCA ALTURA
+========================================================= */
+
+@media (max-height: 765px) and (min-width: 801px) {
+
+    .section {
+        min-height: 140dvh;
+        --subir-conteudo: 75px;
+    }
+
+
+    /* TEXTO */
+
+    .content {
+        max-width: 440px;
+    }
+
+    .subtitle {
+        top: -50px;
+
+        font-size: 15px;
+    }
+
+    .titleOne {
+        top: -20px;
+
+        font-size: 72px;
+        line-height: 0.95;
+    }
+
+    .text {
+        margin-top: 10px;
+
+        font-size: 11px;
+        line-height: 1.6;
+        letter-spacing: 1.2px;
+    }
+
+
+    /* FOTOS */
+
+    .imageArray {
         gap: 20px;
     }
 
     .imageCard {
-        width: 260px;
-        height: 434px;
+        width: 250px;
+        height: 417px;
     }
 
-    .titleOne {
-        font-size: 75px;
-    }
-} */
 
-/* @media (max-width: 1340px){
-    .content {
-        top: calc(71.5% - 120px);
-        max-width: 360px;
-    }
-
-    .subtitle {
-        font-size: 14px;
-        top: -40px;
-    }
-
-    .titleOne {
-        font-size: 64px;
-        top: -25px;
-    }
-
-    .text {
-        font-size: 16px;
-        margin-top: 0;
-    }
-
-    .imageSection {
-        top: calc(71.5% + 75px);
-    }
-
-    .imageArray {
-        gap: 18px;
-    }
-
-    .imageCard {
-        width: 220px;
-        height: 367px;
-    }
+    /* TIMELINE */
 
     .timelineContainer {
         margin-top: 28px;
-        column-gap: 45px;
+        column-gap: 35px;
     }
 
     .data {
-        font-size: 12px;
-        margin-bottom: 14px;
+        font-size: 11px;
+        letter-spacing: 1.3px;
     }
 
     .momento {
-        font-size: 20px;
-        margin-top: 14px;
+        margin-top: 7px;
+        font-size: 21px;
     }
 
     .circle {
         width: 8px;
         height: 8px;
+        bottom: 36px;
     }
 
-    .line {
-        top: 34px;
-    }
-} */
 
-/* @media (max-width: 1150px) {
+    /* BOTÃO */
 
-
-    .section{
-        min-height:240vh;
+    .divPresenca {
+        transform: translate(-29vw, -43px);
     }
 
-    .content{
-        position:absolute;
-        top:62%;
-        left:50%;
-        transform:translateX(-50%);
-        max-width:700px;
-        text-align:center;
-    }
+    .presenca {
+        padding: 11px 35px;
 
-    .subtitle{
-        position:static;
-        font-size:16px;
-    }
-
-    .titleOne{
-        position:static;
-        display:block;
-        font-size:50px;
-    }
-
-    .text{
-        display:block;
-        margin-top:20px;
-    }
-
-    .imageSection{
-        position:absolute;
-        top:75%;
-        left:50%;
-        right:auto;
-        transform:translateX(-50%);
-    }
-
-    .imageArray{
-        justify-content:center;
-    }
-
-    .timelineContainer{
-        margin-top:40px;
-    }
-
-} */
-
-
-/* @media (max-height: 740px) {
-
-    .content {
-        top: calc(71.5% - 120px);
-        max-width: 360px;
-    }
-
-    .subtitle {
-        font-size: 14px;
-        top: -40px;
-    }
-
-    .titleOne {
-        font-size: 64px;
-        top: -25px;
-    }
-
-    .text {
-        font-size: 16px;
-        margin-top: 0;
-    }
-
-    .imageSection {
-        top: calc(71.5% + 75px);
-    }
-
-    .imageArray {
-        gap: 18px;
-    }
-
-    .imageCard {
-        width: 220px;
-        height: 367px;
-    }
-
-    .timelineContainer {
-        margin-top: 28px;
-        column-gap: 45px;
-    }
-
-    .data {
         font-size: 12px;
-        margin-bottom: 14px;
+        letter-spacing: 1.5px;
     }
-
-    .momento {
-        font-size: 20px;
-        margin-top: 14px;
-    }
-
-    .circle {
-        width: 8px;
-        height: 8px;
-    }
-
-    .line {
-        top: 34px;
-    }
-} */
+}

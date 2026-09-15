@@ -105,7 +105,6 @@ function Hospedagem() {
 
                 <p className={`${cormorant.className} ${styles.subHeaderText}`}>
                     Selecionamos algumas opções de hospedagem com localização conveniente
-                    <br />
                     para que você aproveite cada momento do fim de semana com tranquilidade.
                 </p>
 
