@@ -1,5 +1,4 @@
 .hero {
-    min-height: 100vh;
     min-height: 100dvh;
     position: relative;
 
@@ -58,6 +57,11 @@
 }
 
 @media(max-width:600px){
+
+    .hero {
+        height: 100svh;
+        min-height: 100svh;
+    }
 
     .homeTitle h1{
         font-size:4.5rem;
