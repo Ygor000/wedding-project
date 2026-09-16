@@ -102,3 +102,186 @@
     letter-spacing: 1px;
     text-align: center;
 }
+
+@media (max-width: 1140px) {
+
+    .section {
+        min-height: 85dvh;
+        grid-template-rows: 38% 62%;
+    }
+
+    .backgroundContainer {
+        padding: 45px 6%;
+        box-sizing: border-box;
+    }
+
+    .content {
+        max-width: 760px;
+    }
+
+    .title {
+        margin-bottom: 50px;
+
+        font-size: 16px;
+        letter-spacing: 2.5px;
+    }
+
+    .iconRow {
+        width: 100%;
+    }
+
+    .generalIcon {
+        width: 65px;
+        height: 65px;
+
+        margin-bottom: 15px;
+    }
+
+    .iconImage {
+        width: 65px;
+        height: 65px;
+    }
+
+    .textIcon {
+        font-size: 13px;
+        letter-spacing: 1.5px;
+    }
+
+    .line {
+        width: 55px;
+    }
+
+    .subtitle {
+        margin-top: 55px;
+
+        max-width: 600px;
+
+        font-size: 19px;
+        line-height: 1.4;
+    }
+}
+
+
+/* =========================================================
+   MAX-WIDTH: 800PX
+========================================================= */
+
+@media (max-width: 800px) {
+
+    .section {
+        min-height: 80dvh;
+        grid-template-rows: 35% 65%;
+    }
+
+    .backgroundContainer {
+        padding: 40px 5%;
+        box-sizing: border-box;
+    }
+
+    .content {
+        max-width: 650px;
+    }
+
+    .title {
+        margin-bottom: 40px;
+
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+
+    .iconRow {
+        width: 100%;
+    }
+
+    .iconContainer {
+        min-width: 0;
+    }
+
+    .generalIcon {
+        width: 52px;
+        height: 52px;
+
+        margin-bottom: 12px;
+    }
+
+    .iconImage {
+        width: 52px;
+        height: 52px;
+    }
+
+    .textIcon {
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+
+    .line {
+        width: 30px;
+    }
+
+    .subtitle {
+        margin-top: 45px;
+
+        max-width: 500px;
+
+        font-size: 17px;
+        line-height: 1.4;
+    }
+}
+
+@media (max-height: 780px) and (min-width: 801px) {
+
+    .section {
+        min-height: 90dvh;
+        grid-template-rows: 38% 62%;
+    }
+
+    .backgroundContainer {
+        padding: 35px 6%;
+        box-sizing: border-box;
+    }
+
+    .content {
+        max-width: 800px;
+    }
+
+    .title {
+        margin-bottom: 35px;
+
+        font-size: 15px;
+        letter-spacing: 2.5px;
+    }
+
+    .iconRow {
+        width: 100%;
+    }
+
+    .generalIcon {
+        width: 58px;
+        height: 58px;
+
+        margin-bottom: 12px;
+    }
+
+    .iconImage {
+        width: 58px;
+        height: 58px;
+    }
+
+    .textIcon {
+        font-size: 12px;
+        letter-spacing: 1.5px;
+    }
+
+    .line {
+        width: 50px;
+    }
+
+    .subtitle {
+        margin-top: 40px;
+
+        max-width: 600px;
+
+        font-size: 18px;
+        line-height: 1.35;
+    }
+}
