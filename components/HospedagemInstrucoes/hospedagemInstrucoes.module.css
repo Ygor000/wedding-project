@@ -761,40 +761,62 @@
 
     .optionHotel {
         border-top: none;
+
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
+
         width: 100%;
         height: auto;
-        text-align: center;
+
+        text-align: left;
+
+        padding: 35px 12%;
+        box-sizing: border-box;
     }
 
     .indexHotel {
         width: 100%;
         height: auto;
-        padding: 25px 30px 15px;
+
+        padding: 0 0 20px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
         box-sizing: border-box;
-        align-items: center;
     }
 
     .indexLocal {
         width: 100%;
         height: auto;
-        padding: 15px 30px;
+
+        padding: 0 0 20px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
         box-sizing: border-box;
-        align-items: center;
     }
 
     .localItem {
-        justify-content: center;
+        width: 100%;
+        justify-content: flex-start;
     }
 
     .hotelLink {
         width: 100%;
         height: auto;
-        padding: 15px 30px 25px;
+
+        padding: 5px 0 0;
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
         box-sizing: border-box;
-        justify-content: center;
     }
 
     .hotelsSection {

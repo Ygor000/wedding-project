@@ -66,6 +66,11 @@ function Historia(){
 
                     <p className={`${montserrat.className} ${styles.text}`}><span>O MESMO RISO, OS MESMOS SONHOS </span>E, DESDE O INÍCIO, A CERTEZA<span></span>  <span>DE QUE SERIA PARA FICAR.</span></p>
                 </div>
+                <div className={`${montserrat.className} ${styles.divPresenca}`}>
+                    <Link href="/" className={styles.presenca}>
+                        CONFIRMAR PRESENÇA
+                    </Link>
+                </div>
 
                 <div className={styles.imageSection}>
                     <div className={styles.imageArray}>
@@ -96,12 +101,6 @@ function Historia(){
                         </div>
 
                         <div className={styles.line}></div>
-
-                        <div className={`${montserrat.className} ${styles.divPresenca}`}>
-                            <Link href="/" className={styles.presenca}>
-                                CONFIRMAR PRESENÇA
-                            </Link>
-                        </div>
                     </div>
                 </div>
             </div>

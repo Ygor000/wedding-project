@@ -4,36 +4,46 @@
     width: 100%;
     position: relative;
     overflow: hidden;
-    
+
     --subir-conteudo: 100px;
 }
 
 .imageContainer {
     position: absolute;
-    inset: 0; /* top:0; right:0; bottom:0; left:0 */
+    inset: 0;
 }
 
 .image {
     object-fit: cover;
-    object-position: center center; /* ou center top */
+    object-position: center center;
 }
+
+
+/* =========================================================
+   TEXTO
+========================================================= */
 
 .content {
     position: absolute;
-    top: calc(71.5% - 194px - var(--subir-conteudo));
+    top: calc(69.5% - 194px - var(--subir-conteudo));
     left: 7%;
+
     margin-left: 0;
     padding-top: 0;
+
     z-index: 2;
+
     text-align: left;
     max-width: 500px;
 }
 
 .subtitle {
     color: rgb(36, 53, 74);
+
     font-size: 18px;
     font-weight: 300;
     letter-spacing: 2px;
+
     position: relative;
     top: -67px;
 }
@@ -44,23 +54,48 @@
 
     display: flex;
     flex-direction: column;
-    line-height: 1.0;
+
+    line-height: 1;
     font-style: italic;
+
     color: rgb(36, 53, 74);
 
     position: relative;
     top: -26px;
+
     font-weight: 300;
 }
 
 .text {
     display: flex;
     flex-direction: column;
+
     line-height: 1.7;
     font-size: 14px;
+
     margin-top: 15px;
+
     letter-spacing: 1.5px;
+
     color: rgb(36, 53, 74);
+}
+
+
+/* =========================================================
+   GALERIA
+========================================================= */
+
+.imageSection {
+    position: absolute;
+
+    top: calc(71.5% + 76px - var(--subir-conteudo));
+    right: 8%;
+
+    transform: translateY(-50%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .imageArray {
@@ -70,6 +105,7 @@
 
 .imageCard {
     position: relative;
+
     width: 320px;
     height: 534px;
 
@@ -81,18 +117,14 @@
     object-position: center top;
 }
 
-.imageSection {
-    position: absolute;
-    top: calc(71.5% + 76px - var(--subir-conteudo));
-    right: 8%;
-    transform: translateY(-50%);
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+/* =========================================================
+   TIMELINE
+========================================================= */
+
 .timelineContainer {
     margin-top: 40px;
+
     width: 100%;
 
     display: grid;
@@ -106,34 +138,47 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
     text-align: center;
+
     white-space: nowrap;
 }
 
 .data {
     position: relative;
+
     font-size: 14px;
     letter-spacing: 2px;
+
     top: 12px;
+
     margin-bottom: 8px;
+
     font-weight: 400;
+
     color: rgb(36, 53, 74);
 }
 
 .momento {
     margin-top: 10px;
+
     font-size: 26px;
     font-weight: 300;
+
     color: rgb(36, 53, 74);
 }
 
 .line {
     position: absolute;
+
     top: -10px;
     left: 30px;
     right: 30px;
+
     height: 2px;
-    background: rgba(184,145,98,.35);
+
+    background: rgba(184, 145, 98, 0.35);
+
     z-index: 1;
 }
 
@@ -142,8 +187,11 @@
 
     width: 10px;
     height: 10px;
+
     bottom: 40px;
+
     border-radius: 50%;
+
     background: rgb(185, 154, 86);
 
     z-index: 2;
@@ -157,37 +205,57 @@
     transform: translateX(-40px);
 }
 
+
+/* =========================================================
+   CONFIRMAR PRESENÇA
+   Agora é filho direto de .layout
+========================================================= */
+
 .divPresenca {
+    position: absolute;
+
+    left: 7%;
+    bottom: 6%;
+
     display: flex;
     justify-content: flex-start;
 
-    transform: translate(-27.9vw, -51px);
+    z-index: 3;
 }
 
 .presenca {
     background: transparent;
+
     text-decoration: none;
+
     border: 1px solid rgb(36, 53, 74);
+
     padding: 14px 50px;
 
     font-size: 15px;
     font-weight: 400;
     letter-spacing: 2px;
+
     color: rgb(36, 53, 74);
 
     cursor: pointer;
 }
 
-.presenca:hover{
+.presenca:hover {
     color: rgba(36, 53, 74, 0.5);
     border: 1px solid rgba(36, 53, 74, 0.5);
 }
 
-@media (max-width: 1100px) {
+
+/* =========================================================
+   MAX-WIDTH: 1680PX
+========================================================= */
+
+@media (max-width: 1680px) {
 
     .section {
-        min-height: 130dvh;
-        --subir-conteudo: 70px;
+        min-height: 110dvh;
+
     }
 
     .content {
@@ -214,6 +282,7 @@
 
     .imageSection {
         right: 5%;
+        transform: translateY(-58%);
     }
 
     .imageArray {
@@ -239,30 +308,42 @@
         font-size: 21px;
     }
 
+    /* Mesmo alinhamento esquerdo do .content */
     .divPresenca {
-        transform: translate(-31vw, -45px);
+        left: 5%;
+        bottom: 12%;
+
+        margin-bottom: 0px;
     }
 
     .presenca {
         padding: 12px 30px;
         font-size: 12px;
     }
+
+    .circle{
+        bottom: 36px;
+    }
 }
 
 
 /* =========================================================
-   ATÉ 800PX
-   AQUI O LAYOUT DEIXA DE SER ABSOLUTO
+   MAX-WIDTH: 800PX
+   O LAYOUT PASSA PARA FLUXO VERTICAL
 ========================================================= */
 
 @media (max-width: 800px) {
 
     .section {
         width: 100%;
+
         min-height: auto;
         height: auto;
+
         overflow: hidden;
+
         padding: 80px 0;
+
         box-sizing: border-box;
     }
 
@@ -278,6 +359,7 @@
 
     .layout {
         position: relative;
+
         z-index: 2;
 
         width: 100%;
@@ -285,7 +367,8 @@
         display: flex;
         flex-direction: column;
 
-        padding: 0 7%;
+        padding: 200px 7% 0;
+
         box-sizing: border-box;
     }
 
@@ -294,6 +377,7 @@
 
     .content {
         position: relative;
+        order: 1;
         top: auto;
         left: auto;
 
@@ -339,7 +423,7 @@
 
     .imageSection {
         position: relative;
-
+        order: 2;
         top: auto;
         right: auto;
 
@@ -363,6 +447,7 @@
 
     .imageCard {
         width: 100%;
+
         height: 42vw;
         max-height: 340px;
     }
@@ -398,28 +483,40 @@
     .circle {
         width: 8px;
         height: 8px;
-        bottom: 35px;
+
+        bottom: 28px;
     }
 
     .line {
-        left: 8%;
-        right: 8%;
+        top: -6px;
+
+        left: 0;
+        right: 0;
+
+        height: 2px;
     }
 
 
-    /* BOTÃO */
+    /* CONFIRMAR PRESENÇA
+       Agora volta para o fluxo normal da .layout */
 
     .divPresenca {
-        grid-column: 1 / -1;
+        order: 3;
+
+        position: relative;
+        left: auto;
+        bottom: auto;
 
         width: 100%;
 
         margin-top: 35px;
+        margin-bottom: -20px;
 
         display: flex;
         justify-content: center;
 
         transform: none;
+        z-index: 3;
     }
 
     .presenca {
@@ -432,7 +529,7 @@
 
 
 /* =========================================================
-   ATÉ 500PX
+   MAX-WIDTH: 500PX
 ========================================================= */
 
 @media (max-width: 500px) {
@@ -442,7 +539,7 @@
     }
 
     .layout {
-        padding: 0 6%;
+        padding: 165px 6% 0;
     }
 
 
@@ -507,13 +604,16 @@
     .circle {
         width: 7px;
         height: 7px;
-        bottom: 31px;
+
+        bottom: 25px;
     }
 
     .line {
-        top: -8px;
-        left: 10%;
-        right: 10%;
+        top: -5px;
+
+        left: 0;
+        right: 0;
+
         height: 1px;
     }
 
@@ -521,17 +621,30 @@
     /* BOTÃO */
 
     .divPresenca {
+        order: 3;
+
+        position: relative;
+        left: auto;
+        bottom: auto;
+
+        width: 100%;
+
         margin-top: 30px;
+        margin-bottom: 0px;
+
+        display: flex;
+        justify-content: center;
+
+        transform: none;
     }
 
     .presenca {
-        width: 100%;
-        max-width: 280px;
+        width: auto;
+        max-width: none;
 
-        padding: 12px 15px;
+        padding: 12px 30px;
 
         box-sizing: border-box;
-
         text-align: center;
 
         font-size: 10px;
@@ -540,92 +653,13 @@
 }
 
 
-/* =========================================================
-   NOTEBOOKS COM POUCA ALTURA
-========================================================= */
-
-@media (max-height: 765px) and (min-width: 801px) {
-
+@media (max-height: 930px) {
     .section {
-        min-height: 140dvh;
-        --subir-conteudo: 75px;
-    }
-
-
-    /* TEXTO */
-
-    .content {
-        max-width: 440px;
-    }
-
-    .subtitle {
-        top: -50px;
-
-        font-size: 15px;
-    }
-
-    .titleOne {
-        top: -20px;
-
-        font-size: 72px;
-        line-height: 0.95;
-    }
-
-    .text {
-        margin-top: 10px;
-
-        font-size: 11px;
-        line-height: 1.6;
-        letter-spacing: 1.2px;
-    }
-
-
-    /* FOTOS */
-
-    .imageArray {
-        gap: 20px;
-    }
-
-    .imageCard {
-        width: 250px;
-        height: 417px;
-    }
-
-
-    /* TIMELINE */
-
-    .timelineContainer {
-        margin-top: 28px;
-        column-gap: 35px;
-    }
-
-    .data {
-        font-size: 11px;
-        letter-spacing: 1.3px;
-    }
-
-    .momento {
-        margin-top: 7px;
-        font-size: 21px;
-    }
-
-    .circle {
-        width: 8px;
-        height: 8px;
-        bottom: 36px;
-    }
-
-
-    /* BOTÃO */
+        min-height: 120dvh;
+    }    
 
     .divPresenca {
-        transform: translate(-29vw, -43px);
-    }
+        margin-bottom: -30px;
 
-    .presenca {
-        padding: 11px 35px;
-
-        font-size: 12px;
-        letter-spacing: 1.5px;
     }
 }
