@@ -42,11 +42,13 @@ function Presentes(){
                 <div className={styles.bottomContent}>
 
                     <h1 className={`${cormorant.className} ${styles.bottomTitle}`}>
-                        ESPERAMOS POR VOCÊ
+                        <span>ESPERAMOS </span>
+                        <span>POR VOCÊ</span>
                     </h1>
 
                     <p className={`${cormorant.className} ${styles.bottomText}`}>
-                        Confirme sua presença para celebrarmos juntos este dia.
+                        <span>Confirme sua presença para celebrarmos </span>
+                        <span>juntos este dia.</span>
                     </p>
 
                     <Link

@@ -115,6 +115,10 @@
         box-sizing: border-box;
     }
 
+    .weddingImage {
+        object-position: right;
+    }
+
     .content {
         max-width: 760px;
     }
@@ -171,6 +175,10 @@
     .section {
         min-height: 80dvh;
         grid-template-rows: 35% 65%;
+    }
+
+    .weddingImage {
+        object-position: 80% center;
     }
 
     .backgroundContainer {
