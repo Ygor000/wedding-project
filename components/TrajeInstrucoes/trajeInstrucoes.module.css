@@ -348,7 +348,7 @@
     }
 
     .headerSection {
-        height: 28dvh;
+        height: clamp(210px, 55vw, 300px);
         flex-shrink: 0;
     }
 
@@ -456,6 +456,14 @@
 
     .subHeaderSection {
         padding: 30px 6%;
+    }
+
+    .headerTitle {
+        font-size: 38px;
+    }
+
+    .headerText {
+        font-size: 16px;
     }
 
     .subHeaderTitle {
@@ -643,5 +651,20 @@
 
         box-sizing: border-box;
         z-index: 10;
+    }
+}
+
+@media (max-width: 375px) {
+
+    .headerContent {
+        transform: translateY(22px);
+    }
+
+    .headerTitle {
+        font-size: 28px;
+    }
+
+    .headerText {
+        font-size: 14px;
     }
 }
