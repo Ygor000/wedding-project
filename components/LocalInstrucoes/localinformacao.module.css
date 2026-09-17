@@ -377,6 +377,14 @@
     .leafIcon{
         visibility: hidden;
     }
+
+    .headerTitle {
+        font-size: 40px;
+    }
+
+    .headerText {
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 435px){
@@ -388,7 +396,17 @@
     }
 
     .headerSection {
-        height: 28dvh;
+        height: clamp(210px, 55vw, 260px);
+        flex-shrink: 0;
+    }
+
+    .headerImage {
+        object-fit: cover;
+        object-position: center 20%;
+    }
+
+    .headerContent {
+        transform: translateY(30px);
     }
 
     .headerTitle {
@@ -406,9 +424,9 @@
         height: auto;
     }
 
-    .churchSection {
+   .churchSection {
         position: relative;
-        padding-top: 90px;
+        padding-top: 0;
     }
 
     .locationInfoWrapperChurch {
@@ -497,13 +515,6 @@
         height: 100%;
         border-width: 5px;
     }
-}
-
-@media (max-width: 435px) {
-    .churchSection {
-        position: relative;
-        padding-top: 0;
-    }
 
     .localNavigation {
         position: relative !important;
@@ -535,14 +546,10 @@
 @media (max-width: 375px) {
 
     .headerContent {
-        transform: translateY(6dvh);
+        transform: translateY(30px);
     }
 
     .headerTitle {
-        font-size: 28px;
-    }
-
-    .headerText {
-        font-size: 14px;
+        font-size: 31px;
     }
 }

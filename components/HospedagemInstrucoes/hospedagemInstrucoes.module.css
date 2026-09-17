@@ -708,6 +708,16 @@
     }
 }
 
+@media (max-width: 800px) {
+    .headerTitle {
+        font-size: 40px;
+    }
+
+    .headerText {
+        font-size: 18px;
+    }
+}
+
 @media (max-width: 680px) {
 
     .section {
@@ -850,10 +860,13 @@
         box-sizing: border-box;
     }
 
+    .headerContent {
+        transform: translateY(30px);
+    }
+
     .headerTitle {
         font-size: 38px;
     }
-
     .headerText {
         font-size: 16px;
     }
@@ -877,15 +890,16 @@
 
 @media (max-width: 375px) {
 
+    .headerSection {
+        height: clamp(210px, 55vw, 260px);
+        flex-shrink: 0;
+    }
+
     .headerContent {
-        transform: translateY(6dvh);
+        transform: translateY(30px);
     }
 
     .headerTitle {
-        font-size: 28px;
-    }
-
-    .headerText {
-        font-size: 14px;
+        font-size: 31px;
     }
 }
