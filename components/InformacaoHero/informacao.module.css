@@ -173,8 +173,14 @@
 @media (max-width: 800px) {
 
     .section {
-        min-height: 80dvh;
-        grid-template-rows: 35% 65%;
+        min-height: auto;
+        grid-template-rows: clamp(220px, 60vw, 350px) auto;
+    }
+
+    .imageContainer {
+        position: relative;
+        width: 100%;
+        height: clamp(220px, 60vw, 350px);
     }
 
     .weddingImage {
@@ -182,6 +188,7 @@
     }
 
     .backgroundContainer {
+        height: auto;
         padding: 40px 5%;
         box-sizing: border-box;
     }
