@@ -709,6 +709,7 @@
 }
 
 @media (max-width: 800px) {
+
     .headerTitle {
         font-size: 40px;
     }
@@ -725,6 +726,15 @@
         display: block;
         overflow-x: hidden;
         overflow-y: visible;
+    }
+
+    .headerSection {
+        height: clamp(210px, 55vw, 300px);
+        flex-shrink: 0;
+    }
+
+    .headerContent {
+        transform: translateY(30px);
     }
 
     .subHeaderSection {
@@ -889,11 +899,6 @@
 }
 
 @media (max-width: 375px) {
-
-    .headerSection {
-        height: clamp(210px, 55vw, 260px);
-        flex-shrink: 0;
-    }
 
     .headerContent {
         transform: translateY(30px);
