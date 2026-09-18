@@ -374,16 +374,17 @@
     }
 
     .topSection {
-        min-height: auto;
+        min-height: 55dvh;
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 55dvh auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: none;
     }
 
     .topImage {
+        position: relative;
         width: 100%;
-        min-height: 0;
-        height: 55dvh;
+        min-height: 55dvh;
+        height: auto;
     }
 
     .image {
@@ -393,15 +394,7 @@
 
     .topContent {
         width: 100%;
-        min-height: auto;
-
-        padding: 55px 8%;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        box-sizing: border-box;
+        min-height: 55dvh;
     }
 
     .content {
