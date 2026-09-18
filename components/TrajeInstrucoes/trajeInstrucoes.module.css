@@ -348,6 +348,7 @@
     }
 
     .headerSection {
+        height: clamp(210px, 55vw, 300px);
         flex-shrink: 0;
     }
 
