@@ -1,6 +1,7 @@
 {
   "name": "mari-ygor",
   "version": "1.0.0",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "dev": "next dev",
@@ -16,12 +17,12 @@
     "node": "22.x"
   },
   "dependencies": {
+    "@prisma/adapter-pg": "^7.9.1",
     "@prisma/client": "^7.9.1",
     "next": "^16.2.10",
+    "pg": "^8.23.0",
     "prisma": "^7.9.1",
     "react": "^19.2.7",
     "react-dom": "^19.2.7"
-  },
-  "devDependencies": {
   }
 }

@@ -4,7 +4,6 @@
 
 generator client {
   provider = "prisma-client-js"
-  output   = "../generated/prisma"
 }
 
 datasource db {
@@ -13,7 +12,7 @@ datasource db {
 
 model Convidado {
   id            String      @id @default(cuid())
-  nome          String      @db.VarChar(22)
+  nome          String?     @db.VarChar(22)
   sobrenome     String?     @db.VarChar(60)
   apelido       String?     @db.VarChar(22)  
   confirmacao   Boolean     @default(false)
