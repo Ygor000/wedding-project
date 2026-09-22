@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Menu from '../components/Menu';
+import Presenca from '../components/PresencaPage';
 
 function Home(){
     return (
@@ -13,7 +14,8 @@ function Home(){
             <title>Mariana e Ygor - Presença</title>
         </Head>
         <Menu />
-        Bem vindo
+        
+        <Presenca />
     </div>
     )
 }

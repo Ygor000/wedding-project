@@ -15,6 +15,6 @@ model Convidado {
   nome          String?     @db.VarChar(22)
   sobrenome     String?     @db.VarChar(60)
   apelido       String?     @db.VarChar(22)  
-  confirmacao   Boolean     @default(false)
+  confirmacao   Boolean?
   updatedAt     DateTime    @updatedAt
 }

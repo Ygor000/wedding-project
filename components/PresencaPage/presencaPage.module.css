@@ -1,0 +1,339 @@
+.presenca {
+    width: 100%;
+    min-height: 100dvh;
+
+    background-color: rgb(224, 215, 205);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 60px 30px;
+}
+
+.content {
+    width: 100%;
+    max-width: 900px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+
+/* ========================================
+   TÍTULO INICIAL
+======================================== */
+
+.titleButton {
+    margin: 0;
+    padding: 0;
+
+    border: none;
+    background: transparent;
+
+    color: rgba(16, 40, 72, 0.992);
+
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    font-weight: 400;
+    line-height: 0.95;
+
+    cursor: text;
+}
+
+.dot {
+    color: rgb(198, 169, 105);
+}
+
+
+/* ========================================
+   TEXTO DE ORIENTAÇÃO
+======================================== */
+
+.instruction {
+    max-width: 520px;
+
+    margin: 55px 0 0;
+
+    color: rgba(16, 40, 72, 0.75);
+
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+
+/* ========================================
+   ÁREA DE PESQUISA
+======================================== */
+
+.searchArea {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.nameInput {
+    width: 100%;
+    max-width: 750px;
+
+    padding: 0 0 12px;
+
+    border: none;
+    border-bottom: 1px solid rgba(16, 40, 72, 0.4);
+    outline: none;
+
+    background: transparent;
+
+    color: rgba(16, 40, 72, 0.992);
+
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    font-weight: 400;
+    line-height: 1;
+
+    text-align: center;
+}
+
+.nameInput::placeholder {
+    color: rgba(16, 40, 72, 0.45);
+}
+
+.nameInput:focus {
+    border-bottom-color: rgba(16, 40, 72, 0.992);
+}
+
+
+/* ========================================
+   RESULTADOS DA PESQUISA
+======================================== */
+
+.results {
+    width: 100%;
+    max-width: 650px;
+
+    margin-top: 45px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.guestResult {
+    padding: 4px 10px;
+
+    border: none;
+    background: transparent;
+
+    color: rgba(16, 40, 72, 0.78);
+
+    font-family: var(--font-lora), "Lora", serif;
+    font-size: 1.05rem;
+    font-weight: 400;
+
+    cursor: pointer;
+
+    transition:
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.guestResult:hover {
+    color: rgba(16, 40, 72, 1);
+    transform: translateY(-1px);
+}
+
+
+/* ========================================
+   STATUS DA BUSCA
+======================================== */
+
+.status {
+    margin-top: 45px;
+
+    color: rgba(16, 40, 72, 0.65);
+
+    font-family: var(--font-lora), "Lora", serif;
+    font-size: 0.95rem;
+    font-style: italic;
+}
+
+
+/* ========================================
+   CONVIDADO SELECIONADO
+======================================== */
+
+.confirmation {
+    width: 100%;
+
+    margin-top: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.greeting {
+    margin: 0 0 38px;
+
+    color: rgba(16, 40, 72, 0.992);
+
+    font-family: var(--font-cormorant), "Cormorant Garamond", serif;
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+
+/* ========================================
+   CONFIRMAR PRESENÇA
+======================================== */
+
+.confirmButton {
+    padding: 0;
+
+    border: none;
+    border-bottom: 1px solid rgba(16, 40, 72, 0.7);
+
+    background: transparent;
+
+    color: rgba(16, 40, 72, 0.992);
+
+    font-family: var(--font-lora), "Lora", serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.8;
+
+    cursor: pointer;
+
+    transition:
+        color 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.confirmButton:hover {
+    color: rgb(166, 133, 65);
+    border-bottom-color: rgb(166, 133, 65);
+}
+
+
+/* ========================================
+   NÃO COMPARECEREI
+======================================== */
+
+.declineButton {
+    margin-top: 18px;
+    padding: 0;
+
+    border: none;
+    border-bottom: 1px solid transparent;
+
+    background: transparent;
+
+    color: rgba(16, 40, 72, 0.55);
+
+    font-family: var(--font-lora), "Lora", serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+
+    cursor: pointer;
+
+    transition:
+        color 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.declineButton:hover {
+    color: rgba(16, 40, 72, 0.9);
+    border-bottom-color: rgba(16, 40, 72, 0.5);
+}
+
+
+/* ========================================
+   RESPONSIVIDADE
+======================================== */
+
+@media (max-width: 800px) {
+
+    .presenca {
+        min-height: 100dvh;
+        padding: 50px 24px;
+    }
+
+    .titleButton,
+    .nameInput {
+        font-size: clamp(2.8rem, 12vw, 5rem);
+    }
+
+    .instruction {
+        max-width: 400px;
+
+        margin-top: 40px;
+
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+
+    .results {
+        margin-top: 35px;
+        gap: 14px;
+    }
+
+    .guestResult {
+        font-size: 1rem;
+    }
+
+    .confirmation {
+        margin-top: 40px;
+    }
+
+    .greeting {
+        margin-bottom: 32px;
+
+        font-size: 1.8rem;
+    }
+
+    .confirmButton {
+        font-size: 0.95rem;
+    }
+
+    .declineButton {
+        font-size: 0.85rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .presenca {
+        padding: 40px 20px;
+    }
+
+    .titleButton,
+    .nameInput {
+        font-size: 3rem;
+    }
+
+    .instruction {
+        margin-top: 32px;
+    }
+
+    .nameInput {
+        padding-bottom: 8px;
+    }
+
+    .results {
+        margin-top: 30px;
+    }
+
+    .confirmation {
+        margin-top: 35px;
+    }
+
+    .greeting {
+        font-size: 1.6rem;
+    }
+}
