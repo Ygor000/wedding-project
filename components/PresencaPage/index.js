@@ -9,6 +9,9 @@ export default function Presenca() {
     const [resultados, setResultados] = useState([]);
     const [convidadoSelecionado, setConvidadoSelecionado] = useState(null);
     const [carregando, setCarregando] = useState(false);
+    const [enviandoResposta, setEnviandoResposta] = useState(false);
+    const [respostaEnviada, setRespostaEnviada] = useState(null);
+    const [erroResposta, setErroResposta] = useState("");
 
     const inputRef = useRef(null);
 
@@ -79,64 +82,117 @@ export default function Presenca() {
         convidadoSelecionado?.nome ||
         "";
 
+    async function responderPresenca(confirmacao) {
+        if (!convidadoSelecionado || enviandoResposta) {
+            return;
+        }
+
+        try {
+            setEnviandoResposta(true);
+            setErroResposta("");
+
+            const response = await fetch("/api/convidados/responder", {
+                method: "PATCH",
+
+                headers: {
+                    "Content-Type": "application/json",
+                },
+
+                body: JSON.stringify({
+                    id: convidadoSelecionado.id,
+                    confirmacao,
+                }),
+            });
+
+            if (!response.ok) {
+                throw new Error("Não foi possível registrar a resposta.");
+            }
+
+            const convidadoAtualizado = await response.json();
+
+            setConvidadoSelecionado(convidadoAtualizado);
+            setRespostaEnviada(confirmacao);
+
+        } catch (error) {
+            console.error("Erro ao confirmar presença:", error);
+
+            setErroResposta(
+                "Não foi possível registrar sua resposta. Tente novamente."
+            );
+
+        } finally {
+            setEnviandoResposta(false);
+        }
+    }
+
     return (
         <main className={styles.presenca}>
             <section className={styles.content}>
 
-                {/* ANTES DE CLICAR EM "DIGITE SEU NOME" */}
-                {!modoPesquisa && (
-                    <>
+                {/* ÁREA FIXA DO CAMPO DE BUSCA */}
+                <div className={styles.searchHeader}>
+
+                    {!modoPesquisa ? (
                         <button
                             type="button"
                             className={`${styles.titleButton} ${lora.className}`}
                             onClick={abrirPesquisa}
                         >
                             Digite seu nome
-                            <span className={styles.dot}>.</span>
+                            <span className={styles.dot}>...</span>
                         </button>
+                    ) : (
+                        <input
+                            ref={inputRef}
+                            type="text"
+                            value={pesquisa}
+                            onChange={(event) => {
+                                setPesquisa(event.target.value);
+                                setConvidadoSelecionado(null);
+                            }}
+                            className={`${styles.nameInput} ${lora.className}`}
+                            placeholder="Digite seu nome..."
+                            autoComplete="off"
+                        />
+                    )}
 
-                        <p className={styles.instruction}>
-                            Pedimos que confirme o mais rápido que puder,
-                            assim que tiver certeza!
-                        </p>
-                    </>
+                </div>
+
+
+                {/* TEXTO INICIAL */}
+                {!modoPesquisa && (
+                    <p className={`${styles.instruction} ${lora.className}`}>
+                        Pedimos que confirme o mais rápido que puder,
+                        assim que tiver certeza!
+                    </p>
                 )}
 
-                {/* DEPOIS QUE CLICA EM "DIGITE SEU NOME" */}
-                {modoPesquisa && (
-                    <>
-                        <div className={styles.searchArea}>
-                            <input
-                                ref={inputRef}
-                                type="text"
-                                value={pesquisa}
-                                onChange={(event) => {
-                                    setPesquisa(event.target.value);
-                                    setConvidadoSelecionado(null);
-                                }}
-                                className={styles.nameInput}
-                                placeholder="Digite seu nome"
-                                autoComplete="off"
-                            />
-                        </div>
 
-                        {/* ENQUANTO ESTÁ PROCURANDO */}
-                        {carregando && (
+                {/* TUDO QUE APARECE ABAIXO DO INPUT */}
+                {modoPesquisa && (
+                    <div className={styles.searchContent}>
+
+                        {/* {carregando && (
                             <p className={styles.status}>
                                 Procurando...
                             </p>
-                        )}
+                        )} */}
+
 
                         {/* NOMES ENCONTRADOS */}
                         {!carregando &&
                             !convidadoSelecionado &&
                             resultados.length > 0 && (
-                                <div className={styles.results}>
+
+                                <div
+                                    className={`${styles.results} ${montserrat.className}`}
+                                >
                                     {resultados.map((convidado) => (
+
                                         <button
                                             key={convidado.id}
                                             type="button"
-                                            className={styles.guestResult}
+                                            className={`${styles.guestResult} ${montserrat.className}`}
                                             onClick={() =>
                                                 selecionarConvidado(convidado)
                                             }
@@ -148,40 +204,58 @@ export default function Presenca() {
                                 </div>
                             )}
 
-                        {/* NENHUM CONVIDADO ENCONTRADO */}
+
+                        {/* NENHUM RESULTADO */}
                         {!carregando &&
                             !convidadoSelecionado &&
                             pesquisa.trim().length >= 2 &&
                             resultados.length === 0 && (
+
                                 <p className={styles.status}>
                                     Nenhum convidado encontrado.
                                 </p>
                             )}
 
+
                         {/* CONVIDADO SELECIONADO */}
                         {convidadoSelecionado && (
+
                             <div className={styles.confirmation}>
-                                <p className={styles.greeting}>
-                                    {nomeExibicao}! Que bom que você vai!
+
+                                <p className={`${styles.greeting} ${montserrat.className}`}>
+                                    Oi, {nomeExibicao}! Que bom que você vai!
                                 </p>
 
                                 <button
                                     type="button"
                                     className={styles.confirmButton}
+                                    onClick={() => responderPresenca(true)}
+                                    disabled={enviandoResposta}
                                 >
-                                    Clique aqui e confirme a sua presença!
+                                    {enviandoResposta
+                                        ? "Registrando..."
+                                        : "Clique aqui e confirme a sua presença!"
+                                    }
                                 </button>
 
                                 <button
                                     type="button"
                                     className={styles.declineButton}
+                                    onClick={() => responderPresenca(false)}
+                                    disabled={enviandoResposta}
                                 >
-                                    Não comparecerei!
+                                    {enviandoResposta
+                                        ? "Registrando..."
+                                        : "Não comparecerei!"
+                                    }
                                 </button>
+
                             </div>
                         )}
-                    </>
+
+                    </div>
                 )}
+
             </section>
         </main>
     );
