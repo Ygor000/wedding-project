@@ -1,0 +1,177 @@
+.album {
+    position: relative;
+
+    width: 100%;
+    min-height: 100dvh;
+
+    background-color: rgb(224, 215, 205);
+}
+
+
+/* ========================================
+   GALERIA
+======================================== */
+
+.gallery {
+    position: relative;
+
+    width: 100%;
+    min-height: 300dvh;
+
+    overflow: hidden;
+}
+
+
+/* ========================================
+   CONFIGURAÇÃO GERAL DAS FOTOS
+======================================== */
+
+.photo {
+    position: absolute;
+
+    overflow: hidden;
+}
+
+.galleryImage {
+    object-fit: cover;
+}
+
+
+/* ========================================
+   FOTO 1 - GRANDE / ESQUERDA
+======================================== */
+
+.photoOne {
+    top: 12dvh;
+    left: 1vw;
+
+    width: clamp(280px, 28vw, 500px);
+    aspect-ratio: 2 / 3;
+}
+
+
+/* ========================================
+   FOTO 2 - GRANDE / DIREITA
+======================================== */
+
+.photoTwo {
+    top: 12dvh;
+    right: 1vw;
+
+    width: clamp(280px, 28vw, 500px);
+    aspect-ratio: 2 / 3;
+}
+
+
+/* ========================================
+   FOTO 3 - PEQUENA / ESQUERDA
+======================================== */
+
+.photoThree {
+    top: 12dvh;
+    left: 30vw;
+
+    width: clamp(140px, 14vw, 250px);
+    aspect-ratio: 2 / 3;
+}
+
+
+/* ========================================
+   FOTO 4 - PEQUENA / DIREITA
+======================================== */
+
+.photoFour {
+    top: 12dvh;
+    right: 30vw;
+
+    width: clamp(140px, 14vw, 250px);
+    aspect-ratio: 2 / 3;
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 800px) {
+
+    .gallery {
+        min-height: 220dvh;
+    }
+
+    /* Primeira fileira */
+
+    .photoOne {
+        top: 8dvh;
+        left: 3vw;
+
+        width: 42vw;
+    }
+
+    .photoTwo {
+        top: 8dvh;
+        right: 3vw;
+
+        width: 42vw;
+    }
+
+    /* Segunda fileira */
+
+    .photoThree {
+        top: 78dvh;
+        left: 15vw;
+
+        width: 28vw;
+    }
+
+    .photoFour {
+        top: 78dvh;
+        right: 15vw;
+
+        width: 28vw;
+    }
+}
+
+
+/* ========================================
+   CELULAR
+======================================== */
+
+@media (max-width: 480px) {
+
+    .gallery {
+        min-height: 200dvh;
+    }
+
+    /* Primeira fileira */
+
+    .photoOne {
+        top: 6dvh;
+        left: 4vw;
+
+        width: 44vw;
+    }
+
+    .photoTwo {
+        top: 6dvh;
+        right: 4vw;
+
+        width: 44vw;
+    }
+
+    /* Segunda fileira */
+
+    .photoThree {
+        top: 58dvh;
+        left: 14vw;
+
+        width: 30vw;
+    }
+
+    .photoFour {
+        top: 58dvh;
+        right: 14vw;
+
+        width: 30vw;
+    }
+}

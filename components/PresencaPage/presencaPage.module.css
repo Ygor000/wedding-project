@@ -244,6 +244,50 @@
     border: 1px solid rgb(166, 133, 65);
 }
 
+.responseMessage {
+    width: 100%;
+    max-width: 520px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+.responseTitle {
+    margin: 0;
+
+    color: rgba(16, 40, 72, 0.992);
+
+    font-size: clamp(1.2rem, 2.3vw, 2rem);
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.responseText {
+    max-width: 450px;
+
+    margin: 18px 0 0;
+
+    color: rgba(16, 40, 72, 0.72);
+
+    font-size: 0.95rem;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.responseError {
+    max-width: 420px;
+
+    margin: 18px 0 0;
+
+    color: rgba(120, 50, 50, 0.85);
+
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
 
 /* ========================================
    RESPONSIVIDADE - TABLET / CELULAR
@@ -336,6 +380,23 @@
         font-size: 0.85rem;
         line-height: 1.4;
     }
+
+    .responseTitle {
+        font-size: clamp(1.2rem, 4vw, 1.5rem);
+    }
+
+    .responseText {
+        max-width: 400px;
+
+        margin-top: 16px;
+
+        font-size: 0.88rem;
+    }
+
+    .responseError {
+        font-size: 0.82rem;
+    }
+
 }
 
 
@@ -433,5 +494,26 @@
 
         font-size: 0.78rem;
         line-height: 1.4;
+    }
+
+    .responseMessage {
+    max-width: 310px;
+    }
+
+    .responseTitle {
+        font-size: clamp(1.1rem, 5vw, 1.35rem);
+    }
+
+    .responseText {
+        margin-top: 14px;
+
+        font-size: 0.8rem;
+        line-height: 1.55;
+    }
+
+    .responseError {
+        margin-top: 14px;
+
+        font-size: 0.78rem;
     }
 }

@@ -67,7 +67,7 @@ function Historia(){
                     <p className={`${montserrat.className} ${styles.text}`}><span>O MESMO RISO, OS MESMOS SONHOS </span>E, DESDE O INÍCIO, A CERTEZA<span></span>  <span>DE QUE SERIA PARA FICAR.</span></p>
                 </div>
                 <div className={`${montserrat.className} ${styles.divPresenca}`}>
-                    <Link href="/" className={styles.presenca}>
+                    <Link href="/presenca" className={styles.presenca}>
                         CONFIRMAR PRESENÇA
                     </Link>
                 </div>

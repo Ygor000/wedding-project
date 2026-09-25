@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Menu from '../components/Menu';
+import Album from '../components/albumPage/index';
 
 function Home(){
     return (
@@ -12,7 +13,10 @@ function Home(){
             <meta name="viewport" content="initial-scale=1.0, width=device-width" />
             <title>Mariana e Ygor - Álbum de Fotos</title>
         </Head>
+
         <Menu />
+
+        <Album />
 
     </div>
     )
