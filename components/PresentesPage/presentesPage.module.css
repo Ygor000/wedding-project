@@ -1,0 +1,509 @@
+.presentes {
+    position: relative;
+
+    width: 100%;
+    min-height: 100dvh;
+
+    overflow-x: hidden;
+}
+
+
+/* ========================================
+   FUNDO
+======================================== */
+
+.background {
+    position: fixed;
+    inset: 0;
+
+    width: 100%;
+    height: 100dvh;
+
+    z-index: -2;
+}
+
+.backgroundImage {
+    object-fit: cover;
+    object-position: center;
+}
+
+.backgroundOverlay {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(255, 255, 255, 0.28);
+
+    z-index: 1;
+}
+
+
+/* ========================================
+   CONTEÚDO
+======================================== */
+
+.content {
+    width: 100%;
+
+    padding: 90px 7vw 120px;
+}
+
+
+/* ========================================
+   INTRODUÇÃO
+======================================== */
+
+.intro {
+    width: 100%;
+    max-width: 750px;
+
+    margin: 0 auto 70px;
+
+    text-align: center;
+}
+
+.title {
+    margin: 0 0 20px;
+
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    font-weight: 400;
+
+    color: rgb(36, 53, 72);
+}
+
+.subtitle {
+    margin: 0;
+
+    font-size: clamp(0.9rem, 1.2vw, 1.05rem);
+    line-height: 1.8;
+
+    color: rgb(55, 55, 55);
+}
+
+
+/* ========================================
+   GRID
+======================================== */
+
+.grid {
+    width: 100%;
+    max-width: 1500px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    gap: 40px 30px;
+}
+
+
+/* ========================================
+   CARD
+======================================== */
+
+.card {
+    min-width: 0;
+
+    padding: 20px;
+
+    background: rgba(255, 255, 255, 0.88);
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.12);
+
+    backdrop-filter: blur(5px);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.16);
+}
+
+
+/* ========================================
+   IMAGEM
+======================================== */
+
+.imageContainer {
+    position: relative;
+
+    width: 100%;
+    aspect-ratio: 4 / 3;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+}
+
+.giftImage {
+    object-fit: cover;
+}
+
+
+/* ========================================
+   INFORMAÇÕES
+======================================== */
+
+.cardContent {
+    min-height: 190px;
+
+    padding: 20px 5px 5px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+.giftName {
+    margin: 0 0 15px;
+
+    min-height: 44px;
+
+    display: flex;
+    align-items: center;
+
+    font-size: 0.95rem;
+    font-weight: 400;
+
+    line-height: 1.4;
+
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+
+    color: rgb(30, 30, 30);
+}
+
+.price {
+    margin: 0 0 20px;
+
+    font-size: 1rem;
+    font-weight: 600;
+
+    color: rgb(25, 25, 25);
+}
+
+
+/* ========================================
+   BOTÕES
+======================================== */
+
+.detailsButton,
+.boughtButton {
+    min-width: 145px;
+
+    margin-top: auto;
+
+    padding: 10px 24px;
+
+    border-radius: 999px;
+
+    font-size: 1.1rem;
+    font-style: italic;
+    letter-spacing: 0.04em;
+}
+
+.detailsButton {
+    border: 1px solid rgb(36, 53, 72);
+
+    background: transparent;
+
+    color: rgb(36, 53, 72);
+
+    cursor: pointer;
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease;
+}
+
+.detailsButton:hover {
+    background: rgb(36, 53, 72);
+
+    color: white;
+}
+
+.boughtButton {
+    display: inline-block;
+
+    border: 1px solid rgba(80, 80, 80, 0.45);
+
+    color: rgba(70, 70, 70, 0.6);
+}
+
+.cardComprado {
+    background: rgba(245, 245, 245, 0.78);
+}
+
+
+/* ========================================
+   MODAL - FUNDO
+======================================== */
+
+.modalOverlay {
+    position: fixed;
+    inset: 0;
+
+    z-index: 1000;
+
+    padding: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(0, 0, 0, 0.48);
+
+    backdrop-filter: blur(5px);
+}
+
+
+/* ========================================
+   MODAL
+======================================== */
+
+.modal {
+    position: relative;
+
+    width: min(1050px, 90vw);
+    min-height: 470px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    overflow: hidden;
+
+    background: rgb(255, 255, 255);
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.25);
+
+    animation: modalAppear 0.3s ease;
+}
+
+@keyframes modalAppear {
+    from {
+        opacity: 0;
+        transform: translateY(15px) scale(0.98);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+
+/* ========================================
+   IMAGEM DO MODAL
+======================================== */
+
+.modalImage {
+    position: relative;
+
+    width: 100%;
+    min-height: 470px;
+}
+
+
+/* ========================================
+   CONTEÚDO DO MODAL
+======================================== */
+
+.modalContent {
+    padding: 60px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.modalTitle {
+    margin: 0 0 35px;
+
+    font-size: clamp(1.1rem, 2vw, 1.5rem);
+    font-weight: 400;
+
+    line-height: 1.5;
+
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+
+    color: rgb(36, 53, 72);
+}
+
+.modalPrice {
+    margin: 0 0 30px;
+
+    font-size: 1.15rem;
+
+    color: rgb(85, 85, 85);
+}
+
+
+/* ========================================
+   PAGAMENTO
+======================================== */
+
+.paymentButton {
+    padding: 12px 28px;
+
+    border: 1px solid rgb(36, 53, 72);
+    border-radius: 999px;
+
+    color: rgb(36, 53, 72);
+
+    text-decoration: none;
+
+    font-size: 1.15rem;
+    font-style: italic;
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease;
+}
+
+.paymentButton:hover {
+    background: rgb(36, 53, 72);
+
+    color: white;
+}
+
+.paymentInfo {
+    margin: 18px 0 0;
+
+    font-size: 0.8rem;
+    font-style: italic;
+
+    color: rgb(120, 120, 120);
+}
+
+
+/* ========================================
+   FECHAR MODAL
+======================================== */
+
+.closeButton {
+    position: absolute;
+
+    top: 16px;
+    right: 20px;
+
+    z-index: 5;
+
+    padding: 0;
+
+    border: 0;
+
+    background: transparent;
+
+    color: rgb(60, 60, 60);
+
+    font-size: 2rem;
+    font-weight: 300;
+
+    line-height: 1;
+
+    cursor: pointer;
+}
+
+
+/* ========================================
+   RESPONSIVO
+======================================== */
+
+@media (max-width: 1100px) {
+    .grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+
+@media (max-width: 800px) {
+
+    .content {
+        padding:
+            70px
+            clamp(20px, 5vw, 40px)
+            90px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 25px 18px;
+    }
+
+    .modal {
+        width: min(550px, 92vw);
+
+        max-height: 90dvh;
+
+        grid-template-columns: 1fr;
+
+        overflow-y: auto;
+    }
+
+    .modalImage {
+        min-height: 280px;
+    }
+
+    .modalContent {
+        padding: 40px 25px;
+    }
+
+    .modalTitle {
+        margin-bottom: 20px;
+    }
+}
+
+
+@media (max-width: 520px) {
+
+    .content {
+        padding:
+            55px
+            18px
+            70px;
+    }
+
+    .intro {
+        margin-bottom: 45px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 390px;
+
+        margin: 0 auto;
+    }
+
+    .modalOverlay {
+        padding: 15px;
+    }
+
+    .modalImage {
+        min-height: 230px;
+    }
+}

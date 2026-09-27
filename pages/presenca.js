@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Menu from '../components/Menu';
-import Presenca from '../components/PresencaPage';
+import Presenca from '../components/PresencaPage/index';
 
 function Home(){
     return (
