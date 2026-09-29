@@ -517,3 +517,19 @@
         font-size: 0.78rem;
     }
 }
+
+/* @media (max-height: 680px) {
+
+    .presenca {
+        min-height: 850px;
+    }
+
+    .content {
+        position: absolute;
+
+        top: 32%;
+        left: 50%;
+
+        transform: translateX(-50%);
+    }
+} */

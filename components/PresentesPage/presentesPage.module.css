@@ -193,6 +193,27 @@
     color: rgb(25, 25, 25);
 }
 
+/* ========================================
+   FORMAS DE PAGAMENTO
+======================================== */
+
+.paymentMethods {
+    margin-top: 18px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 12px;
+}
+
+.paymentIcon {
+    width: auto;
+    height: 24px;
+
+    object-fit: contain;
+}
+
 
 /* ========================================
    BOTÕES
@@ -385,7 +406,7 @@
 }
 
 .paymentInfo {
-    margin: 18px 0 0;
+    margin: 12px 0 0;
 
     font-size: 0.8rem;
     font-style: italic;
