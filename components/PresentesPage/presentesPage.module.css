@@ -499,26 +499,94 @@
     .content {
         padding:
             55px
-            18px
+            12px
             70px;
     }
 
     .intro {
-        margin-bottom: 45px;
+        margin-bottom: 40px;
     }
+
+    /* ========================================
+       GRID - 2 PRESENTES POR LINHA
+    ======================================== */
 
     .grid {
-        grid-template-columns: 1fr;
-
-        gap: 25px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px 10px;
     }
+
+    /* ========================================
+       CARD
+    ======================================== */
 
     .card {
         width: 100%;
-        max-width: 390px;
+        min-width: 0;
+        max-width: none;
 
-        margin: 0 auto;
+        margin: 0;
+
+        padding: 10px;
+
+        border-radius: 12px;
     }
+
+    /* ========================================
+       IMAGEM
+    ======================================== */
+
+    .imageContainer {
+        width: 100%;
+        aspect-ratio: 4 / 3;
+
+        border-radius: 8px;
+    }
+
+    /* ========================================
+       CONTEÚDO DO CARD
+    ======================================== */
+
+    .cardContent {
+        min-height: 150px;
+
+        padding: 14px 2px 3px;
+    }
+
+    .giftName {
+        min-height: 52px;
+
+        margin-bottom: 10px;
+
+        font-size: 0.68rem;
+        line-height: 1.35;
+        letter-spacing: 0.05em;
+    }
+
+    .price {
+        margin-bottom: 14px;
+
+        font-size: 0.82rem;
+    }
+
+    /* ========================================
+       BOTÕES
+    ======================================== */
+
+    .detailsButton,
+    .boughtButton {
+        min-width: 0;
+        width: 100%;
+
+        padding: 8px 8px;
+
+        font-size: 0.9rem;
+        letter-spacing: 0.02em;
+    }
+
+    /* ========================================
+       MODAL
+    ======================================== */
 
     .modalOverlay {
         padding: 15px;
@@ -526,5 +594,30 @@
 
     .modalImage {
         min-height: 230px;
+    }
+
+    .modalContent {
+        padding: 32px 20px;
+    }
+
+    .modalTitle {
+        font-size: 1rem;
+    }
+
+    .modalPrice {
+        font-size: 1rem;
+    }
+
+    .paymentButton {
+        padding: 10px 22px;
+        font-size: 1rem;
+    }
+
+    .paymentMethods {
+        gap: 10px;
+    }
+
+    .paymentIcon {
+        height: 21px;
     }
 }
