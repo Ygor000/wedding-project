@@ -48,7 +48,7 @@ function Trajes() {
                 <div className={styles.subHeaderSection}>
 
                     <h2 className={`${cormorant.className} ${styles.subHeaderTitle}`}>
-                        O TRAJE É SOCIAL E ELEGANTE.
+                        PARA UM DIA ESPECIAL, UMA PRODUÇÃO À ALTURA
                     </h2>
 
                     <div className={styles.subHeaderLine}></div>

@@ -16,7 +16,7 @@ function Home(){
         <Head>
             <meta charSet="utf-8" />
             <meta name="robots" content="index, follow" />
-            <meta name="description" content="Site sobre casamento" />
+            <meta name="description" content="Site sobre o casamento de Mariana e Ygor" />
             <meta name="author" content="Ygor" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <title>Mariana e Ygor</title>
